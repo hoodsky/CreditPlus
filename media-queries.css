@@ -49,6 +49,9 @@
   .content {
     padding: 0;
   }
+  .navbar {
+    margin-left: 10px;
+  }
   .calculator {
     display: flex;
     flex-direction: column;
