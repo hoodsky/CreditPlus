@@ -10,6 +10,9 @@
   }
 }
 @media (max-width: 992px) {
+  .navbar {
+    display: block;
+  }
   .header_links {
     display: none;
   }
