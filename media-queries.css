@@ -1,0 +1,186 @@
+@media (max-width: 1200px) {
+  .header_phone {
+    display: none;
+  }
+  .header_lang {
+    display: none;
+  }
+  .receive_money_button {
+    padding: 14px 30px;
+  }
+}
+@media (max-width: 992px) {
+  .header_links {
+    display: none;
+  }
+  .calculator_div {
+    margin-bottom: 40px;
+  }
+  .conditions_ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .calculator {
+    padding: 40px;
+  }
+  .calculator_text {
+    padding-left: 40px;
+  }
+  .calculator_form {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .tittle {
+    display: flex;
+    justify-content: center;
+  }
+  .header .content {
+    padding: 0 12px;
+  }
+  .content {
+    padding: 0;
+  }
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .calculator_form {
+    padding: 0px 0 40px 0;
+    border-right: none;
+    border-bottom: 1px solid #e0e9f2;
+  }
+  .calculator_text {
+    padding: 40px 0 0 0;
+  }
+  .calculator_div {
+    margin-bottom: 40px;
+  }
+  .tab_box_content_grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration__table {
+    overflow-x: scroll;
+    max-width: 749px;
+  }
+  .desktop__how-registration {
+    display: none;
+  }
+  .mobile__how-registration {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  details {
+    margin: 0 5px;
+    padding: 5px 5px 5px 15px;
+    box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
+    border-radius: 5px;
+  }
+  details:first-child {
+    border-radius: 10px 10px 5px 5px;
+  }
+  details:last-child {
+    border-radius: 5px 5px 10px 10px;
+  }
+  .inline_list {
+    display: flex;
+    flex-direction: column;
+  }
+  details[open] p {
+    animation: spoiler 1s;
+  }
+  details[open] ul {
+    animation: spoiler 1s;
+  }
+  details[open] ol {
+    animation: spoiler 1s;
+  }
+  @keyframes spoiler {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 1000px;
+    }
+  }
+  .header_login_button span {
+    display: none;
+  }
+  .header_login_button {
+    padding: 15px;
+  }
+  .header_login_button img {
+    margin: 0;
+    width: 20px;
+  }
+  .header_logo {
+    margin-left: 30px;
+  }
+  .slider::-webkit-slider-thumb {
+    width: 35px;
+    height: 35px;
+    margin-top: -14px;
+  }
+  .slider::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    margin-top: -14px;
+  }
+  .services__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+  }
+  .services__card {
+    margin-right: 0;
+    border-radius: 0;
+  }
+  .services__card:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .services__card:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+  .tab_box_content,
+  .tab_box_content_condition {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header_phone {
+    display: none;
+  }
+  .header_lang {
+    display: none;
+  }
+  .carousel_card {
+    width: 200px;
+    padding: 10px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .partners__card {
+    height: 100px;
+    width: 200px;
+  }
+  .ant-carousel-element {
+    padding: 10px 20px;
+  }
+  .ant-carousel-element img {
+    width: 150px;
+  }
+}
