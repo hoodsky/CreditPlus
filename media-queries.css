@@ -49,6 +49,17 @@
   .content {
     padding: 0;
   }
+  .header_login_button {
+    background: none;
+    padding: 0px;
+  }
+  .header_login_button:hover {
+    box-shadow: none;
+  }
+  .header_login_button svg {
+    fill: var(--main-color);
+    width: 30px;
+  }
   .navbar {
     margin-left: 10px;
   }
@@ -124,13 +135,6 @@
   .header_login_button span {
     display: none;
   }
-  .header_login_button {
-    padding: 15px;
-  }
-  .header_login_button img {
-    margin: 0;
-    width: 20px;
-  }
   .header_logo {
     margin-left: 30px;
   }
@@ -147,7 +151,11 @@
   .services__links {
     display: flex;
     flex-direction: column;
-    row-gap: 2px;
+    row-gap: 1px;
+  }
+  .card,
+  .services__card {
+    box-shadow: none;
   }
   .services__card {
     margin-right: 0;
