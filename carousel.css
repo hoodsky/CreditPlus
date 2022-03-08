@@ -101,7 +101,7 @@ div.ant-carousel-dots {
   position: absolute;
   left: 0;
   bottom: -30px;
-  z-index: 30;
+  /* z-index: 30; */
   text-align: center;
 }
 
