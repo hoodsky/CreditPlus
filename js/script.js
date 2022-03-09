@@ -65,34 +65,7 @@ reviewsCarousel.querySelector('.next').onclick = function() {
       list.style.marginLeft = position + 'px';
 };
     
-// карусель партнёры
-
-// const partnersCarousel = document.querySelector('#partnersCarousel')
-// const listP = partnersCarousel.querySelector('ul');
-// const listElemsP = partnersCarousel.querySelectorAll('li');
-
-// let positionP = 0;
-
-// partnersCarousel.querySelector('.prev_part').onclick = function () {
-//   positionP += width * count
-//   positionP = Math.min(positionP, 0)
-//   listP.style.marginLeft = positionP + 'px';
-// };
-// partnersCarousel.querySelector('.next_part').onclick = function() {
-//       // сдвиг вправо
-//       positionP -= width * count;
-//       // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-//       positionP = Math.max(positionP, -width * (listElemsP.length - count));
-//       listP.style.marginLeft = positionP + 'px';
-// };
-
 // калькулятор 
-
-
-
-
-
-
 
 const minSum = 600;
 const minDay = 5;
