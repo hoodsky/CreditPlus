@@ -45,7 +45,6 @@
                                 Сб-Вс: с 8:00 до 22:00</span>
                         </div>
                     </div>
-
                     <div class="header_lang">
                         <a href="#">UA</a>
                         <hr>
@@ -65,6 +64,8 @@
                             <span>Войти</span>
                         </a>
                     </div>
+
+
                     <!-- navbar -->
                     <div class="navbar">
                         <div class="nav-container">
@@ -85,8 +86,31 @@
                         </div>
                     </div>
 
-                </div>
+                    <!-- модальные окна -->
 
+                    <!-- прококод только зарегестрированным пользователям -->
+
+                    <div id="openModalPromo" class="modal">
+                        <div class="modal-promo card">
+                            <div>
+                                <a href="#close" title="Close" class="modal-promo_close-button">×</a>
+                            </div>
+                            <div class="modal-promo_tittle">
+                                <h3>Промокод</h3>
+                            </div>
+                            <div class="modal-promo_text">
+                                Услуга промокода доступна только для <br>зарегистрированых пользователей
+                            </div>
+                            <div class="modal-promo_login">
+                                <button class="modal-promo_login-button">
+                                    <span>Войти в личный кабинет</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </header>
@@ -178,7 +202,7 @@
                         </a>
                     </div>
                     <div class="promo_link">
-                        <a href="">У меня есть промокод</a>
+                        <a href="#openModalPromo">У меня есть промокод</a>
                     </div>
                 </div>
             </div>
