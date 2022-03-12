@@ -63,6 +63,9 @@
   .navbar {
     margin-left: 10px;
   }
+  .modal-promo {
+    width: 80%;
+  }
   .calculator {
     display: flex;
     flex-direction: column;
@@ -180,13 +183,19 @@
   .header_lang {
     display: none;
   }
+  .modal-promo {
+    width: 100%;
+  }
+  .modal-promo_login-button {
+    width: auto;
+    padding: 14px 30px;
+  }
   .carousel_card {
     width: 200px;
     padding: 10px;
     height: 300px;
     overflow: hidden;
   }
-
   .partners__card {
     height: 100px;
     width: 200px;
