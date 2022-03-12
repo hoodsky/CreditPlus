@@ -1071,7 +1071,7 @@ footer {
   line-height: 150%;
   /* or 18px */
   color: #ffffff;
-  display: table-footer-group;
+  /* display: table-footer-group; */
 }
 footer p {
   font-family: Avenir Next Cyr;
