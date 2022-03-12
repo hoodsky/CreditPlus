@@ -131,4 +131,3 @@ function culc8() {
   var div = document.getElementById('caclulator_day_start_slide');
   div.style.width = ((+rng.value - +minDay)/25*100+'%');
 }
-

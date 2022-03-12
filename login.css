@@ -1,0 +1,10 @@
+.login-page {
+  display: flex;
+}
+.login-page_form {
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 620px;
+  height: 310px;
+}
