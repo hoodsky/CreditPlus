@@ -304,6 +304,9 @@ p {
 }
 /* модальные окна  */
 .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   /* фиксированное положение */
   top: 0;
@@ -332,8 +335,6 @@ p {
   position: absolute;
   width: 620px;
   height: 281px;
-  left: 650px;
-  top: 135px;
   background: #ffffff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -341,6 +342,9 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  /* поднимаем окно на немного выше */
+  margin-bottom: 300px;
 }
 .modal-promo_close-button {
   position: absolute;
