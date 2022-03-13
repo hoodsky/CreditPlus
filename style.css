@@ -2,10 +2,15 @@
   --main-color: #ff8900;
   --blue-color: #003366;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   background: #fff;
 }
-
+main {
+}
 a {
   text-decoration: none;
 }
