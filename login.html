@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./carousel.css">
-    <link rel="stylesheet" href="./login-page.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" media="screen and (color)" href="./media-queries.css">
 </head>
 <script>
@@ -48,7 +48,25 @@
     <div w3-include-html="header.html"></div>
 
     <main>
-        <div class="content">
+        <div class="login-page">
+            <div class="content">
+                <div class="card login-card">
+                    <div class="login-card_tittle">
+                        <a href="">Вход</a>
+                        <div class="login-card_vl"></div>
+                        <a href="">Регистрация</a>
+                    </div>
+                    <form action="">
+                        <span class="login-card_form-tittle">Номер телефона</span>
+                        <div class="login-card_phone">
+                            <input class="tel_country" type="tel" placeholder="+380" disabled>
+                            <input class="tel_input" type="tel" autocomplete="on" pattern="[0-9]{9}" inputmode="tel"
+                                placeholder="123456789">
+                        </div>
+                        <button class="login-card_submit-button" type="submit">Далее</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 

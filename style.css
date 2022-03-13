@@ -10,6 +10,9 @@ body {
   background: #fff;
 }
 main {
+  /* для прижима футера внизу страницы 
+  Высота - высота футера. */
+  min-height: calc(100vh - 283px);
 }
 a {
   text-decoration: none;
