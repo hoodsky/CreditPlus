@@ -48,581 +48,791 @@
     <!-- header -->
     <div w3-include-html="header.html"></div>
 
-    <main>
-        <!-- calculator -->
-        <div class="content">
-            <div class="card calculator_div">
-                <div class="calculator_tittle">
-                    <div>
-                        <h1>Перший кредит онлайн</h1>
-                    </div>
-                    <div>
-                        До 10 000 грн під 0,01% на день
-                    </div>
-                </div>
-                <div class="calculator">
-                    <div class="calculator_form">
-                        <form action="">
-                            <div class="calculator_form_first">
-                                <div class="calculator_top">
-                                    <span class="calculator_top_tittle">Выберите сумму</span>
-                                    <div class="calculator_intup_all">
-                                        <input class="calculator_intup" id="input_sum" type="number" value="4000"
-                                            oninput="culc2()+culc6()" readonly>
-
-                                        <span class="input_value">грн</span>
-                                    </div>
-                                </div>
-                                <div class="calculator_slider">
-                                    <div class="caclulator_start_slide" id="caclulator_start_slide"> </div>
-                                    <input oninput="culcSum()+culc3()" id="range_sum" type="range" min="0" max="9400"
-                                        step="100" value="3600" class="slider">
-                                </div>
-                                <div class="calculator_value">
-                                    <span>600 грн</span>
-                                    <span>10 000 грн</span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="calculator_top">
-                                    <span class="calculator_top_tittle">Выберите срок</span>
-                                    <div class="calculator_intup_all">
-                                        <input oninput="culc7()+culc8()" id="input_day" class="calculator_intup"
-                                            type="number" value="15" autocomplete="off" min="5" max="30" readonly>
-                                        <span class="input_value">дней</span>
-                                    </div>
-                                </div>
-                                <div class="calculator_slider">
-                                    <div class="caclulator_day_start_slide" id="caclulator_day_start_slide"> </div>
-                                    <input oninput="culc4()+culc5()" type="range" min="0" max="25" value="10"
-                                        class="slider" id="range_day">
-                                </div>
-                                <div class="calculator_value">
-                                    <span>5 дней</span>
-                                    <span>30 дней</span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="calculator_text">
-                        <div class="calculator_text_stroke">
-                            <div>
-                                Берете
-                            </div>
-                            <span id="span_sum">
-                                4000 грн
-                            </span>
-
-                        </div>
-                        <div class="calculator_text_stroke">
-                            <div>
-                                Проценты
-                            </div>
-                            <span>
-                                4,20 грн
-                            </span>
-                        </div>
-                        <div class="calculator_text_stroke">
-                            <div>
-                                Отдаёте до
-                            </div>
-                            <span>
-                                3 004,20 грн
-                            </span>
-                        </div>
-                        <div class="money_button">
-                            <a href="" class="receive_money_button">
-                                <span>Получить деньги</span>
-                            </a>
-                        </div>
-                        <div class="promo_link">
-                            <a href="#openModalPromo">У меня есть промокод</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- advantage -->
-        <div class="advantage">
-            <div class="content">
-                <div class="advantage__tittle tittle">
-                    <h2>Наши преимущества</h2>
-                </div>
-                <div class="tab_box">
-                    <div class="tab_box_tabs">
-                        <button class="tab_links" onclick="openTab(event, 'NewClient')" id="defaultOpen">Новым
-                            клиентам</button>
-                        <button class="tab_links" onclick="openTab(event, 'OldClient')">Постоянным клиентам</button>
-                    </div>
-                    <div class="tab_box_content" id="NewClient">
-                        <div class="tab_box_content_grid">
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame1.png" alt="">
-                                </div>
-                                <p>
-                                    Выдаем первый кредит онлайн на сумму до 15 000 грн со сниженной процентной
-                                    ставкой
-                                    0,01%
-                                    в день
-                                </p>
-                            </div>
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame2.png" alt="">
-                                </div>
-                                <p>
-                                    Оформляем кредиты онлайн 24/7. Рассматриваем 100% заявок, в том числе анкеты
-                                    клиентов с
-                                    проблемной кредитной историей
-                                </p>
-                            </div>
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame3.png" alt="">
-                                </div>
-                                <p>
-                                    Запрашиваем только паспорт, ИНН, номер банковской карты и телефона
-                                </p>
-                            </div>
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame4.png" alt="">
-                                </div>
-                                <p>
-                                    Переводим деньги на банковскую карточку сразу после подписания электронного
-                                    договора
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab_box_content" id="OldClient">
-                        <div class="tab_box_content_grid">
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame5.png" alt="">
-                                </div>
-                                <p>
-                                    Повышаем сумму до 25 000 грн при стандартной процентной ставке 1,99% в день.
-                                    Дарим
-                                    промокоды и скидки до 99% на будущие
-                                    кредиты согласно программе лояльности
-                                </p>
-                            </div>
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame6.png" alt="">
-                                </div>
-                                <p>
-                                    Закрепляем за вами личный кабинет — вы сможете просматривать историю кредитов,
-                                    быстрее
-                                    оформлять их и узнавать о
-                                    персональных скидках
-                                </p>
-                            </div>
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame7.png" alt="">
-                                </div>
-                                <p>
-                                    Рассматриваем повторные запросы в первую очередь — анкету автоматически
-                                    анализирует
-                                    система
-                                </p>
-                            </div>
-                            <div class="tab_box_content_text">
-                                <div>
-                                    <img src="./img/Frame8.png" alt="">
-                                </div>
-                                <p>
-                                    Сохраняем данные в системе — вам не придется вводить их снова
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- conditions -->
-        <div class="conditions">
-            <div class="content">
-                <div class="tab_box">
-                    <div class="tab_box_tabs">
-                        <button class="tab_links_cond" onclick="openTabCond(event, 'Take')" id="defaultOpenCond">Как
-                            взять?</button>
-                        <button class="tab_links_cond" onclick="openTabCond(event, 'GiveAway')">Как
-                            погасить?</button>
-                    </div>
-                    <div class="tab_box_content_condition" id="Take">
-                        <ol class="conditions_ol">
-                            <li>
-                                <div>
-                                    <div class="condition_li_tittle">
-                                        Заполните заявку
-                                    </div>
-                                    <div class="condition_li_text">
-                                        Выберите необходимую вам сумму и укажите срок кредита
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="condition_li_tittle">
-                                        Дождитесь решения
-                                    </div>
-                                    <div class="condition_li_text">
-                                        Зарегистрируйтесь и ожидайте решения по заявке
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="condition_li_tittle">
-                                        Получите деньги
-                                    </div>
-                                    <div class="condition_li_text">
-                                        Подпишите договор с помощью SMS-кода, и сразу же получите деньги на карту
-                                    </div>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="tab_box_content_condition" id="GiveAway">
-                        <ol class="conditions_ol">
-                            <li>
-                                <div>
-                                    <div class="condition_li_tittle">
-                                        В личном кабинете
-                                    </div>
-                                    <div class="condition_li_text">
-                                        Погасите кредит онлайн через интернет любой платежной картой в личном
-                                        кабинете
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="condition_li_tittle">
-                                        В «Приват24»
-                                    </div>
-                                    <div class="condition_li_text">
-                                        Закройте кредит в режиме онлайн в приложении или интернет-банкинге
-                                        «Приват24»
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div class="condition_li_tittle">
-                                        В терминале
-                                    </div>
-                                    <div class="condition_li_text">
-                                        Внесите оплату в терминале «ПриватБанка», IBox, EasyPay, City24 или Sistema
-                                    </div>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- comments -->
-        <div class="comments">
-            <div class="content">
-                <div class="comments__tittle tittle">
-                    <h2>Отзывы</h2>
-                </div>
-                <!-- отзывы -->
-                <div id="reviewsCarousel" class="carousel">
-                    <button class="arrow prev">&#10229;</button>
-                    <div class="gallery">
-                        <ul>
-                            <li>
-                                <div class="carousel_card">
-                                    <div class="comment_tittle">
-                                        <div class="photo_commentator">
-                                            <img src="./img/Avatar2.png" alt="">
-                                        </div>
-                                        <div class="commentator_tittle">
-                                            <div class="commentator_name">
-                                                Виктор
-                                            </div>
-                                            <div class="commentator_date">
-                                                04.03.2022
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment_text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam
-                                        similique
-                                        dolore.
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="carousel_card">
-                                    <div class="comment_tittle">
-                                        <div class="photo_commentator">
-                                            <img src="./img/Avatar5.png" alt="">
-                                        </div>
-                                        <div class="commentator_tittle">
-                                            <div class="commentator_name">
-                                                Джимми
-                                            </div>
-                                            <div class="commentator_date">
-                                                13.03.2021
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment_text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dicta quos,
-                                        voluptates
-                                        sint
-                                        eum voluptatibus.
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="carousel_card">
-                                    <div class="comment_tittle">
-                                        <div class="photo_commentator">
-                                            <img src="./img/Avatar4.png" alt="">
-                                        </div>
-                                        <div class="commentator_tittle">
-                                            <div class="commentator_name">
-                                                Вика
-                                            </div>
-                                            <div class="commentator_date">
-                                                04.08.2021
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment_text">
-                                        Понравилось
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="carousel_card">
-                                    <div class="comment_tittle">
-                                        <div class="photo_commentator">
-                                            <img src="./img/Avatar3.png" alt="">
-                                        </div>
-                                        <div class="commentator_tittle">
-                                            <div class="commentator_name">
-                                                Валерий
-                                            </div>
-                                            <div class="commentator_date">
-                                                02.05.1998
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment_text">
-                                        Супер все!
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="carousel_card">
-                                    <div class="comment_tittle">
-                                        <div class="photo_commentator">
-                                            <img src="./img/Avatar1.png" alt="">
-                                        </div>
-                                        <div class="commentator_tittle">
-                                            <div class="commentator_name">
-                                                Джимми
-                                            </div>
-                                            <div class="commentator_date">
-                                                04.03.2021
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment_text">
-                                        Брав тут гроші два рази, отримував потрібні суми, і очікування щодо переплат
-                                        були
-                                        такими, як
-                                        обумовлено. Окремий плюс
-                                        компанії — прозорі умови. У договорі все ясно прописано — знаєш, скільки
-                                        береш,
-                                        скільки
-                                        будеш повинен повернути і які
-                                        відсотки. Проблем при отриманні грошей і погашенні жодного разу не виникло.
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="arrow next">&#10230;</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- партнеры -->
-        <div class="partners">
-            <div class="content">
-                <div class="partners__tittle tittle">
-                    <h2>Партнеры</h2>
-                </div>
-
-                <div class="ant-carousel">
-                    <div class="ant-carousel-hider">
-                        <ul class="ant-carousel-list">
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/01.png"
-                                        alt="Київстар"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/02.png"
-                                        alt="PCI DSS"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/03.png"
-                                        alt="Укракинское бюро кредитных историй"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/04.png"
-                                        alt="EasyPay"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/05.png" alt="VISA"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/06.png"
-                                        alt="BankID"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/07.png"
-                                        alt="Comodo"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/08.png"
-                                        alt="Національний банк України"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/09.png" alt="IBox"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/10.png" alt="МБКІ"></a>
-                            </li>
-                            <li class="ant-carousel-element"><a href=""><img src="./img/partners/11.png"
-                                        alt="iPay.ua"></a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="ant-carousel-arrow-left"></div>
-                    <div class="ant-carousel-arrow-right"></div>
-                    <div class="ant-carousel-dots"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- условия оформления -->
-        <div class="registration">
-            <div class="content">
-                <div class="registration_tittle tittle">
-                    <h2>Условия оформления онлайн-кредита на карту</h2>
-                </div>
-                <div class="registration__table card">
-                    <table>
-                        <tr>
-                            <th>Тип кредита</th>
-                            <th>Тип кредита</th>
-                            <th>Повторный кредит</th>
-                        </tr>
-                        <tr>
-                            <td>Сумма</td>
-                            <td>До 15000 грн</td>
-                            <td>До 25000 грн</td>
-                        </tr>
-                        <tr>
-                            <td>Процентная ставка</td>
-                            <td>Стандартная - 1,99% в день (726,35 годовых). Ставка на первый период может быть
-                                снижена
-                                до
-                                0,01% в день (3,65% годовых),
-                                если потребителем будут выполнены условия договора и <a href="">программы
-                                    лояльности</a>.
-                                Реальная годовая
-                                процентная ставка — от
-                                6961,93% до 115757,37% (зависит от выполнения условий).</td>
-                            <td>Стандартная - 1,99% в день (726,35 годовых). Ставка на первый период может быть
-                                снижена
-                                до
-                                0,019% в день (7,5106%
-                                годовых), если потребитель является участником <a href="">программы лояльности</a>.
-                                Реальная
-                                годовая
-                                процентная ставка — от 7004,32% до
-                                115757,37% (зависит от условий участия в программе лояльности).</td>
-                        </tr>
-                        <tr>
-                            <td>Время рассмотрения заявки</td>
-                            <td>До 15 минут</td>
-                            <td>До 5 минут</td>
-                        </tr>
-                        <tr>
-                            <td>Срок</td>
-                            <td colspan="2">До 365 дней (период уплаты процентов за пользование от 3-х до 30 дней)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Возраст заемщика</td>
-                            <td colspan="2">От 18 до 65 лет</td>
-                        </tr>
-                        <tr>
-                            <td>Способ получения кредита</td>
-                            <td colspan="2">Оформление кредита проходит в онлайн-режиме</td>
-
-                        </tr>
-                        <tr>
-                            <td>Необходимое для оформления онлайн-кредита</td>
-                            <td>Паспорт, ИНН (РНУКПН), действительная платежная
-                                карта, выданная на ваше имя,
-                                мобильный телефон</td>
-                            <td>Действительная платежная карта, выданная на ваше имя, и мобильный телефон.
-                                При оформлении повторного
-                                кредита предоставлять документы не нужно</td>
-                        </tr>
-                        <tr>
-                            <td>Возможность пролонгации кредита</td>
-                            <td>Без ограничений, в соответствии с условиями договора по стандартной процентной
-                                ставке
-                            </td>
-                            <td>Без ограничений, в соответствии с условиями договора по стандартной процентной
-                                ставке
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Преимущества</td>
-                            <td>Кредит выдается со сниженной процентной ставкой.</td>
-                            <td>Оформление в тот же день При повторном обращении не нужно
-                                проходить регистрацию. Решение будет известно за несколько минут</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- как получить -->
-
-        <div class="how_registration">
-            <div class="content">
-                <div class="tittle">
-                    <h2>Как получить выгодный кредит онлайн?</h2>
+    <!-- calculator -->
+    <div class="content">
+        <div class="card calculator_div">
+            <div class="calculator_tittle">
+                <div>
+                    <h1>Перший кредит онлайн</h1>
                 </div>
                 <div>
-                    <p>
-                        Вне зависимости от текущего месторасположения и времени суток вы можете получить кредит
-                        менее
-                        чем за
-                        полчаса. Для этого
-                        нужны только активная платежная карта любого банка Украины и интернет. Далее мы расскажем,
-                        как
-                        воспользоваться услугой и
-                        получить кредит на карту выгодно.
+                    До 10 000 грн під 0,01% на день
+                </div>
+            </div>
+            <div class="calculator">
+                <div class="calculator_form">
+                    <form action="">
+                        <div class="calculator_form_first">
+                            <div class="calculator_top">
+                                <span class="calculator_top_tittle">Выберите сумму</span>
+                                <div class="calculator_intup_all">
+                                    <input class="calculator_intup" id="input_sum" type="number" value="4000"
+                                        oninput="culc2()+culc6()" readonly>
+                                    <span class="input_value">грн</span>
+                                </div>
+                            </div>
+                            <div class="calculator_slider">
+                                <div class="caclulator_start_slide" id="caclulator_start_slide"> </div>
+                                <input oninput="culcSum()+culc3()" id="range_sum" type="range" min="0" max="9400"
+                                    step="100" value="3600" class="slider">
+                            </div>
+                            <div class="calculator_value">
+                                <span>600 грн</span>
+                                <span>10 000 грн</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="calculator_top">
+                                <span class="calculator_top_tittle">Выберите срок</span>
+                                <div class="calculator_intup_all">
+                                    <input oninput="culc7()+culc8()" id="input_day" class="calculator_intup"
+                                        type="number" value="15" autocomplete="off" min="5" max="30" readonly>
+                                    <span class="input_value">дней</span>
+                                </div>
+                            </div>
+                            <div class="calculator_slider">
+                                <div class="caclulator_day_start_slide" id="caclulator_day_start_slide"> </div>
+                                <input oninput="culc4()+culc5()" type="range" min="0" max="25" value="10" class="slider"
+                                    id="range_day">
+                            </div>
+                            <div class="calculator_value">
+                                <span>5 дней</span>
+                                <span>30 дней</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="calculator_text">
+                    <div class="calculator_text_stroke">
+                        <div>
+                            Берете
+                        </div>
+                        <span id="span_sum">
+                            4000 грн
+                        </span>
+                    </div>
+                    <div class="calculator_text_stroke">
+                        <div>
+                            Проценты
+                        </div>
+                        <span>
+                            4,20 грн
+                        </span>
+                    </div>
+                    <div class="calculator_text_stroke">
+                        <div>
+                            Отдаёте до
+                        </div>
+                        <span>
+                            3 004,20 грн
+                        </span>
+                    </div>
+                    <div class="money_button">
+                        <a href="" class="receive_money_button">
+                            <span>Получить деньги</span>
+                        </a>
+                    </div>
+                    <div class="promo_link">
+                        <a href="#openModalPromo">У меня есть промокод</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- advantage -->
+    <div class="advantage">
+        <div class="content">
+            <div class="advantage__tittle tittle">
+                <h2>Наши преимущества</h2>
+            </div>
+            <div class="tab_box">
+                <div class="tab_box_tabs">
+                    <button class="tab_links" onclick="openTab(event, 'NewClient')" id="defaultOpen">Новым
+                        клиентам</button>
+                    <button class="tab_links" onclick="openTab(event, 'OldClient')">Постоянным клиентам</button>
+                </div>
+                <div class="tab_box_content" id="NewClient">
+                    <div class="tab_box_content_grid">
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame1.png" alt="">
+                            </div>
+                            <p>
+                                Выдаем первый кредит онлайн на сумму до 15 000 грн со сниженной процентной
+                                ставкой
+                                0,01%
+                                в день
+                            </p>
+                        </div>
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame2.png" alt="">
+                            </div>
+                            <p>
+                                Оформляем кредиты онлайн 24/7. Рассматриваем 100% заявок, в том числе анкеты
+                                клиентов с
+                                проблемной кредитной историей
+                            </p>
+                        </div>
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame3.png" alt="">
+                            </div>
+                            <p>
+                                Запрашиваем только паспорт, ИНН, номер банковской карты и телефона
+                            </p>
+                        </div>
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame4.png" alt="">
+                            </div>
+                            <p>
+                                Переводим деньги на банковскую карточку сразу после подписания электронного
+                                договора
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_box_content" id="OldClient">
+                    <div class="tab_box_content_grid">
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame5.png" alt="">
+                            </div>
+                            <p>
+                                Повышаем сумму до 25 000 грн при стандартной процентной ставке 1,99% в день.
+                                Дарим
+                                промокоды и скидки до 99% на будущие
+                                кредиты согласно программе лояльности
+                            </p>
+                        </div>
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame6.png" alt="">
+                            </div>
+                            <p>
+                                Закрепляем за вами личный кабинет — вы сможете просматривать историю кредитов,
+                                быстрее
+                                оформлять их и узнавать о
+                                персональных скидках
+                            </p>
+                        </div>
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame7.png" alt="">
+                            </div>
+                            <p>
+                                Рассматриваем повторные запросы в первую очередь — анкету автоматически
+                                анализирует
+                                система
+                            </p>
+                        </div>
+                        <div class="tab_box_content_text">
+                            <div>
+                                <img src="./img/Frame8.png" alt="">
+                            </div>
+                            <p>
+                                Сохраняем данные в системе — вам не придется вводить их снова
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- conditions -->
+    <div class="conditions">
+        <div class="content">
+            <div class="tab_box">
+                <div class="tab_box_tabs">
+                    <button class="tab_links_cond" onclick="openTabCond(event, 'Take')" id="defaultOpenCond">Как
+                        взять?</button>
+                    <button class="tab_links_cond" onclick="openTabCond(event, 'GiveAway')">Как
+                        погасить?</button>
+                </div>
+                <div class="tab_box_content_condition" id="Take">
+                    <ol class="conditions_ol">
+                        <li>
+                            <div>
+                                <div class="condition_li_tittle">
+                                    Заполните заявку
+                                </div>
+                                <div class="condition_li_text">
+                                    Выберите необходимую вам сумму и укажите срок кредита
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="condition_li_tittle">
+                                    Дождитесь решения
+                                </div>
+                                <div class="condition_li_text">
+                                    Зарегистрируйтесь и ожидайте решения по заявке
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="condition_li_tittle">
+                                    Получите деньги
+                                </div>
+                                <div class="condition_li_text">
+                                    Подпишите договор с помощью SMS-кода, и сразу же получите деньги на карту
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="tab_box_content_condition" id="GiveAway">
+                    <ol class="conditions_ol">
+                        <li>
+                            <div>
+                                <div class="condition_li_tittle">
+                                    В личном кабинете
+                                </div>
+                                <div class="condition_li_text">
+                                    Погасите кредит онлайн через интернет любой платежной картой в личном
+                                    кабинете
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="condition_li_tittle">
+                                    В «Приват24»
+                                </div>
+                                <div class="condition_li_text">
+                                    Закройте кредит в режиме онлайн в приложении или интернет-банкинге
+                                    «Приват24»
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="condition_li_tittle">
+                                    В терминале
+                                </div>
+                                <div class="condition_li_text">
+                                    Внесите оплату в терминале «ПриватБанка», IBox, EasyPay, City24 или Sistema
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- comments -->
+    <div class="comments">
+        <div class="content">
+            <div class="comments__tittle tittle">
+                <h2>Отзывы</h2>
+            </div>
+            <!-- отзывы -->
+            <div id="reviewsCarousel" class="carousel">
+                <button class="arrow prev">&#10229;</button>
+                <div class="gallery">
+                    <ul>
+                        <li>
+                            <div class="carousel_card">
+                                <div class="comment_tittle">
+                                    <div class="photo_commentator">
+                                        <img src="./img/Avatar2.png" alt="">
+                                    </div>
+                                    <div class="commentator_tittle">
+                                        <div class="commentator_name">
+                                            Виктор
+                                        </div>
+                                        <div class="commentator_date">
+                                            04.03.2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment_text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam
+                                    similique
+                                    dolore.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="carousel_card">
+                                <div class="comment_tittle">
+                                    <div class="photo_commentator">
+                                        <img src="./img/Avatar5.png" alt="">
+                                    </div>
+                                    <div class="commentator_tittle">
+                                        <div class="commentator_name">
+                                            Джимми
+                                        </div>
+                                        <div class="commentator_date">
+                                            13.03.2021
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dicta quos,
+                                    voluptates
+                                    sint
+                                    eum voluptatibus.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="carousel_card">
+                                <div class="comment_tittle">
+                                    <div class="photo_commentator">
+                                        <img src="./img/Avatar4.png" alt="">
+                                    </div>
+                                    <div class="commentator_tittle">
+                                        <div class="commentator_name">
+                                            Вика
+                                        </div>
+                                        <div class="commentator_date">
+                                            04.08.2021
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment_text">
+                                    Понравилось
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="carousel_card">
+                                <div class="comment_tittle">
+                                    <div class="photo_commentator">
+                                        <img src="./img/Avatar3.png" alt="">
+                                    </div>
+                                    <div class="commentator_tittle">
+                                        <div class="commentator_name">
+                                            Валерий
+                                        </div>
+                                        <div class="commentator_date">
+                                            02.05.1998
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment_text">
+                                    Супер все!
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="carousel_card">
+                                <div class="comment_tittle">
+                                    <div class="photo_commentator">
+                                        <img src="./img/Avatar1.png" alt="">
+                                    </div>
+                                    <div class="commentator_tittle">
+                                        <div class="commentator_name">
+                                            Джимми
+                                        </div>
+                                        <div class="commentator_date">
+                                            04.03.2021
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment_text">
+                                    Брав тут гроші два рази, отримував потрібні суми, і очікування щодо переплат
+                                    були
+                                    такими, як
+                                    обумовлено. Окремий плюс
+                                    компанії — прозорі умови. У договорі все ясно прописано — знаєш, скільки
+                                    береш,
+                                    скільки
+                                    будеш повинен повернути і які
+                                    відсотки. Проблем при отриманні грошей і погашенні жодного разу не виникло.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="arrow next">&#10230;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- партнеры -->
+    <div class="partners">
+        <div class="content">
+            <div class="partners__tittle tittle">
+                <h2>Партнеры</h2>
+            </div>
+
+            <div class="ant-carousel">
+                <div class="ant-carousel-hider">
+                    <ul class="ant-carousel-list">
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/01.png" alt="Київстар"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/02.png" alt="PCI DSS"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/03.png"
+                                    alt="Укракинское бюро кредитных историй"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/04.png" alt="EasyPay"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/05.png" alt="VISA"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/06.png" alt="BankID"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/07.png" alt="Comodo"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/08.png"
+                                    alt="Національний банк України"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/09.png" alt="IBox"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/10.png" alt="МБКІ"></a>
+                        </li>
+                        <li class="ant-carousel-element"><a href=""><img src="./img/partners/11.png" alt="iPay.ua"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="ant-carousel-arrow-left"></div>
+                <div class="ant-carousel-arrow-right"></div>
+                <div class="ant-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- условия оформления -->
+    <div class="registration">
+        <div class="content">
+            <div class="registration_tittle tittle">
+                <h2>Условия оформления онлайн-кредита на карту</h2>
+            </div>
+            <div class="registration__table card">
+                <table>
+                    <tr>
+                        <th>Тип кредита</th>
+                        <th>Тип кредита</th>
+                        <th>Повторный кредит</th>
+                    </tr>
+                    <tr>
+                        <td>Сумма</td>
+                        <td>До 15000 грн</td>
+                        <td>До 25000 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Процентная ставка</td>
+                        <td>Стандартная - 1,99% в день (726,35 годовых). Ставка на первый период может быть
+                            снижена
+                            до
+                            0,01% в день (3,65% годовых),
+                            если потребителем будут выполнены условия договора и <a href="">программы
+                                лояльности</a>.
+                            Реальная годовая
+                            процентная ставка — от
+                            6961,93% до 115757,37% (зависит от выполнения условий).</td>
+                        <td>Стандартная - 1,99% в день (726,35 годовых). Ставка на первый период может быть
+                            снижена
+                            до
+                            0,019% в день (7,5106%
+                            годовых), если потребитель является участником <a href="">программы лояльности</a>.
+                            Реальная
+                            годовая
+                            процентная ставка — от 7004,32% до
+                            115757,37% (зависит от условий участия в программе лояльности).</td>
+                    </tr>
+                    <tr>
+                        <td>Время рассмотрения заявки</td>
+                        <td>До 15 минут</td>
+                        <td>До 5 минут</td>
+                    </tr>
+                    <tr>
+                        <td>Срок</td>
+                        <td colspan="2">До 365 дней (период уплаты процентов за пользование от 3-х до 30 дней)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Возраст заемщика</td>
+                        <td colspan="2">От 18 до 65 лет</td>
+                    </tr>
+                    <tr>
+                        <td>Способ получения кредита</td>
+                        <td colspan="2">Оформление кредита проходит в онлайн-режиме</td>
+
+                    </tr>
+                    <tr>
+                        <td>Необходимое для оформления онлайн-кредита</td>
+                        <td>Паспорт, ИНН (РНУКПН), действительная платежная
+                            карта, выданная на ваше имя,
+                            мобильный телефон</td>
+                        <td>Действительная платежная карта, выданная на ваше имя, и мобильный телефон.
+                            При оформлении повторного
+                            кредита предоставлять документы не нужно</td>
+                    </tr>
+                    <tr>
+                        <td>Возможность пролонгации кредита</td>
+                        <td>Без ограничений, в соответствии с условиями договора по стандартной процентной
+                            ставке
+                        </td>
+                        <td>Без ограничений, в соответствии с условиями договора по стандартной процентной
+                            ставке
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Преимущества</td>
+                        <td>Кредит выдается со сниженной процентной ставкой.</td>
+                        <td>Оформление в тот же день При повторном обращении не нужно
+                            проходить регистрацию. Решение будет известно за несколько минут</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- как получить -->
+    <div class="how_registration">
+        <div class="content">
+            <div class="tittle">
+                <h2>Как получить выгодный кредит онлайн?</h2>
+            </div>
+            <div>
+                <p>
+                    Вне зависимости от текущего месторасположения и времени суток вы можете получить кредит
+                    менее
+                    чем за
+                    полчаса. Для этого
+                    нужны только активная платежная карта любого банка Украины и интернет. Далее мы расскажем,
+                    как
+                    воспользоваться услугой и
+                    получить кредит на карту выгодно.
+                </p>
+                <div class="desktop__how-registration">
+
+
+                    <h3>В какой ситуации поможет онлайн-кредит на карту?</h3>
+
+                    <p>Примеры ситуаций, когда выгодно обратиться в МФО, чтобы быстро получить деньги в кредит:
                     </p>
-                    <div class="desktop__how-registration">
+                    <ul>
+                        <li>задержали зарплату и не хватает средств на повседневные расходы (продукты питания,
+                            лекарства,
+                            оплату
+                            проезда и пр.);</li>
+                        <li>появились непредвиденные расходы во время отдыха, командировки и т. д.;</li>
+                        <li>нужно рассчитаться за покупку или услугу, но нет возможности оплатить наличными;
+                        </li>
+                        <li>рейтинг кредитной истории не позволяет взять кредит на желаемую сумму. Один из
+                            способов
+                            реабилитировать
+                            КИ —
+                            периодически брать кредиты в микрофинансовых организациях и вовремя погашать их.
+                            Сроки и
+                            суммы не
+                            имеют
+                            значения.
+                            Ключевой фактор — своевременное закрытие кредита.</li>
+                    </ul>
+                    <p>Как правило, подобные ситуации требуют быстрых действий, поэтому онлайн-кредит —
+                        оптимальный
+                        выход.
+                    </p>
 
+                    <h3>Где быстрее и легче взять кредит онлайн в Украине?</h3>
 
-                        <h3>В какой ситуации поможет онлайн-кредит на карту?</h3>
+                    <p>
+                        В Украине услуги онлайн-кредитования предоставляют микрофинансовые компании и банки.
+                        Последние
+                        готовы
+                        сотрудничать с
+                        заемщиком после тщательного анализа кредитной истории и документов. Как правило, помимо
+                        паспорта
+                        и
+                        ИНН,
+                        это справка о
+                        доходах и с места работы, документы, которые подтверждают наличие недвижимости или
+                        автомобиля.
+                        Кроме
+                        того, банк неохотно
+                        выдает кредиты заемщикам, которые трудоустроены неофициально.
+                    </p>
+                    <p>
+                        МФО менее требовательны к своим клиентам, и все проходит дистанционно. Нужно подать
+                        заявку,
+                        заполнить
+                        регистрационную
+                        анкету, указать данные паспорта (или ID-карты), ИНН (РНУКПН) и своей платежной карты.
+                        Также,
+                        следуя
+                        инструкциям,
+                        необходимо пройти верификацию. Положительная кредитная история и официальное
+                        трудоустройство
+                        не
+                        являются
+                        определяющими
+                        факторами при принятии решения по заявке.
+                    </p>
 
-                        <p>Примеры ситуаций, когда выгодно обратиться в МФО, чтобы быстро получить деньги в кредит:
+                    <h3>Преимущества кредита онлайн на карту</h3>
+
+                    <ul>
+                        <li>Оптимальная сумма — до 10-20 тыс. грн. Эта сумма достаточно комфортна для погашения,
+                            особенно,
+                            если
+                            деньги нужны до
+                            зарплаты.</li>
+                        <li>Небольшой срок (до 30 дней) позволяет закрыть кредит сразу после того, как вы
+                            получите
+                            зарплату.
+                        </li>
+                        <li> Возможность распоряжаться деньгами на свое усмотрение. Вы получите необходимую
+                            сумму на
+                            личный
+                            счет
+                            и
+                            сможете
+                            использовать средства для любых целей. Это равноценно такой популярной финансовой
+                            услуге,
+                            как
+                            потребительский кредит
+                            онлайн на карту.</li>
+                        <li> Понятные условия без скрытых комиссий. С помощью кредитного калькулятора можно
+                            узнать
+                            сумму
+                            начисляемых
+                            процентов и дату
+                            погашения еще до подачи заявки.</li>
+                        <li> Выгодная программа лояльности. Некоторые микрофинансовые организации предлагают
+                            оформить
+                            первый
+                            кредит
+                            со сниженной
+                            процентной ставкой — 0,01% в день. Переплата будет минимальной.</li>
+                        <li>Круглосуточный сервис. Подайте заявку утром, днем, ночью, в выходной или праздничный
+                            день.
+                            Ваш
+                            запрос
+                            обработает
+                            система, и после одобрения деньги перечислят на карту.</li>
+                    </ul>
+
+                    <h3>Как взять онлайн-кредит в CreditPlus: пошаговая инструкция</h3>
+
+                    <ol>
+                        <li>Сформируйте заявку с помощью кредитного калькулятора, выберите необходимую сумму и
+                            дату
+                            погашения
+                            кредита, затем нажмите
+                            кнопку «Получить деньги». Вы сразу узнаете сумму процентов. Если у вас есть
+                            промокод,
+                            воспользуйтесь
+                            им
+                            на этом этапе,
+                            чтобы получить скидку на процентную ставку.</li>
+                        <li>Перед регистрацией ознакомьтесь с правилами и публичным предложением. Примите их и
+                            дайте
+                            согласие на
+                            обработку
+                            персональных данных и доступ к кредитной истории.</li>
+                        <li>Укажите в регистрационной анкете необходимую информацию. Добавьте платежную карту
+                            любого
+                            украинского
+                            банка. Следуя
+                            инструкции, пройдите верификацию с помощью системы Bank ID или сделайте фото с
+                            паспортом
+                            в
+                            руках
+                            в
+                            режиме реального
+                            времени. Обратите внимание: ошибки и неправдивая информация в анкете могут стать
+                            причиной
+                            отказа.</li>
+                        <li>Дождитесь решения по заявке. Вы получите его в SMS. Также информация будет
+                            продублирована в
+                            личном
+                            кабинете.</li>
+                        <li>Ознакомьтесь с кредитным договором в личном кабинете. Согласитесь с условиями и
+                            подтвердите
+                            договор
+                            с
+                            помощью
+                            одноразового электронного идентификатора, отправленного в SMS.</li>
+                        <li>CreditPlus отправит вам деньги на карту после того, как получит подтверждение
+                            заключения
+                            кредитного
+                            договора. Также
+                            компания отправит клиенту его экземпляр кредитного договора по электронной почте,
+                            которую он
+                            указал
+                            в
+                            личном кабинете.</li>
+                    </ol>
+
+                    <h3>Рекомендации для клиентов</h3>
+
+                    <p>
+                        Не откладывайте погашение на последний день. Ваш перевод может задержаться по
+                        техническим
+                        причинам.
+                        Обратите внимание:
+                        оплата кредита через кассу банка может проходить в течение трех суток согласно
+                        регламенту
+                        работы
+                        банковских организаций.
+                    </p>
+                    <p>
+                        Если вы не успеваете вовремя погасить кредит, воспользуйтесь услугой пролонгации или
+                        закройте
+                        часть
+                        кредита. В этом
+                        случае проценты насчитываются только на фактически оставшуюся сумму. Инструкции по
+                        услугам
+                        пролонгации и
+                        частичного
+                        погашения вы можете найти в разделе «Как продлить кредит».
+                    </p>
+
+                    <h3>Юридическая информация</h3>
+
+                    <p>ТМ CreditPlus принадлежит ООО «АВЕНТУС УКРАИНА» (ЕГРПОУ: 41078230).</p>
+                    <ul class="inline_list">
+                        <li><a href="">Свидетельство о регистрации финансового учреждения ООО «АВЕНТУС
+                                УКРАИНА»</a>
+                        </li>
+                        <li><a href="">Политика конфиденциальности от 19.01.2020</a></li>
+                    </ul>
+
+                    <h3>Пример расчета при оформлении кредита со сниженной процентной ставкой 0,01% в день</h3>
+
+                    <p>Размер кредита — 1000 грн, продолжительность — 10 дней, проценты — 0,01% в день.</p>
+                    <p>(0,0001 * 10 * 1000) + 1000 = 1001 грн. Итоговый размер платежа: 1001 грн.</p>
+
+                    <h3>Пример расчета онлайн-кредита со стандартной процентной ставкой 1,99% в день</h3>
+
+                    <p>Размер кредита — 1000 грн, продолжительность — 10 дней, проценты — 1,99% в день.</p>
+                    <p>(0,0199 * 10 * 1000) + 1000 = 1199 грн. Итоговый размер платежа: 1199 грн.</p>
+
+                    <h3>При дополнительных вопросах</h3>
+
+                    <ul class="inline_list">
+                        <li><a href="">Обратитесь в службу поддержки</a></li>
+                        <li>Свяжитесь со специалистом в онлайн-чате</li>
+                        <li>Задайте вопрос по телефону: <a href="">0(800)753-363</a>.</li>
+                    </ul>
+
+                </div>
+
+                <div class="mobile__how-registration">
+                    <details>
+                        <summary>
+                            <h3>В какой ситуации поможет онлайн-кредит на карту?</h3>
+                        </summary>
+                        <p>Примеры ситуаций, когда выгодно обратиться в МФО, чтобы быстро получить деньги в
+                            кредит:
                         </p>
                         <ul>
-                            <li>задержали зарплату и не хватает средств на повседневные расходы (продукты питания,
+                            <li>задержали зарплату и не хватает средств на повседневные расходы (продукты
+                                питания,
                                 лекарства,
                                 оплату
                                 проезда и пр.);</li>
@@ -644,15 +854,18 @@
                             оптимальный
                             выход.
                         </p>
-
-                        <h3>Где быстрее и легче взять кредит онлайн в Украине?</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Где быстрее и легче взять кредит онлайн в Украине?</h3>
+                        </summary>
                         <p>
                             В Украине услуги онлайн-кредитования предоставляют микрофинансовые компании и банки.
                             Последние
                             готовы
                             сотрудничать с
-                            заемщиком после тщательного анализа кредитной истории и документов. Как правило, помимо
+                            заемщиком после тщательного анализа кредитной истории и документов. Как правило,
+                            помимо
                             паспорта
                             и
                             ИНН,
@@ -668,7 +881,8 @@
                             заявку,
                             заполнить
                             регистрационную
-                            анкету, указать данные паспорта (или ID-карты), ИНН (РНУКПН) и своей платежной карты.
+                            анкету, указать данные паспорта (или ID-карты), ИНН (РНУКПН) и своей платежной
+                            карты.
                             Также,
                             следуя
                             инструкциям,
@@ -679,11 +893,14 @@
                             определяющими
                             факторами при принятии решения по заявке.
                         </p>
-
-                        <h3>Преимущества кредита онлайн на карту</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Преимущества кредита онлайн на карту</h3>
+                        </summary>
                         <ul>
-                            <li>Оптимальная сумма — до 10-20 тыс. грн. Эта сумма достаточно комфортна для погашения,
+                            <li>Оптимальная сумма — до 10-20 тыс. грн. Эта сумма достаточно комфортна для
+                                погашения,
                                 особенно,
                                 если
                                 деньги нужны до
@@ -698,7 +915,8 @@
                                 счет
                                 и
                                 сможете
-                                использовать средства для любых целей. Это равноценно такой популярной финансовой
+                                использовать средства для любых целей. Это равноценно такой популярной
+                                финансовой
                                 услуге,
                                 как
                                 потребительский кредит
@@ -715,18 +933,22 @@
                                 кредит
                                 со сниженной
                                 процентной ставкой — 0,01% в день. Переплата будет минимальной.</li>
-                            <li>Круглосуточный сервис. Подайте заявку утром, днем, ночью, в выходной или праздничный
+                            <li>Круглосуточный сервис. Подайте заявку утром, днем, ночью, в выходной или
+                                праздничный
                                 день.
                                 Ваш
                                 запрос
                                 обработает
                                 система, и после одобрения деньги перечислят на карту.</li>
                         </ul>
-
-                        <h3>Как взять онлайн-кредит в CreditPlus: пошаговая инструкция</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Как взять онлайн-кредит в CreditPlus: пошаговая инструкция</h3>
+                        </summary>
                         <ol>
-                            <li>Сформируйте заявку с помощью кредитного калькулятора, выберите необходимую сумму и
+                            <li>Сформируйте заявку с помощью кредитного калькулятора, выберите необходимую сумму
+                                и
                                 дату
                                 погашения
                                 кредита, затем нажмите
@@ -736,12 +958,14 @@
                                 им
                                 на этом этапе,
                                 чтобы получить скидку на процентную ставку.</li>
-                            <li>Перед регистрацией ознакомьтесь с правилами и публичным предложением. Примите их и
+                            <li>Перед регистрацией ознакомьтесь с правилами и публичным предложением. Примите их
+                                и
                                 дайте
                                 согласие на
                                 обработку
                                 персональных данных и доступ к кредитной истории.</li>
-                            <li>Укажите в регистрационной анкете необходимую информацию. Добавьте платежную карту
+                            <li>Укажите в регистрационной анкете необходимую информацию. Добавьте платежную
+                                карту
                                 любого
                                 украинского
                                 банка. Следуя
@@ -768,15 +992,18 @@
                                 заключения
                                 кредитного
                                 договора. Также
-                                компания отправит клиенту его экземпляр кредитного договора по электронной почте,
+                                компания отправит клиенту его экземпляр кредитного договора по электронной
+                                почте,
                                 которую он
                                 указал
                                 в
                                 личном кабинете.</li>
                         </ol>
-
-                        <h3>Рекомендации для клиентов</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Рекомендации для клиентов</h3>
+                        </summary>
                         <p>
                             Не откладывайте погашение на последний день. Ваш перевод может задержаться по
                             техническим
@@ -798,9 +1025,11 @@
                             частичного
                             погашения вы можете найти в разделе «Как продлить кредит».
                         </p>
-
-                        <h3>Юридическая информация</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Юридическая информация</h3>
+                        </summary>
                         <p>ТМ CreditPlus принадлежит ООО «АВЕНТУС УКРАИНА» (ЕГРПОУ: 41078230).</p>
                         <ul class="inline_list">
                             <li><a href="">Свидетельство о регистрации финансового учреждения ООО «АВЕНТУС
@@ -808,306 +1037,67 @@
                             </li>
                             <li><a href="">Политика конфиденциальности от 19.01.2020</a></li>
                         </ul>
-
-                        <h3>Пример расчета при оформлении кредита со сниженной процентной ставкой 0,01% в день</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Пример расчета при оформлении кредита со сниженной процентной ставкой 0,01% в
+                                день
+                            </h3>
+                        </summary>
                         <p>Размер кредита — 1000 грн, продолжительность — 10 дней, проценты — 0,01% в день.</p>
                         <p>(0,0001 * 10 * 1000) + 1000 = 1001 грн. Итоговый размер платежа: 1001 грн.</p>
-
-                        <h3>Пример расчета онлайн-кредита со стандартной процентной ставкой 1,99% в день</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Пример расчета онлайн-кредита со стандартной процентной ставкой 1,99% в день
+                            </h3>
+                        </summary>
                         <p>Размер кредита — 1000 грн, продолжительность — 10 дней, проценты — 1,99% в день.</p>
                         <p>(0,0199 * 10 * 1000) + 1000 = 1199 грн. Итоговый размер платежа: 1199 грн.</p>
-
-                        <h3>При дополнительных вопросах</h3>
-
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>При дополнительных вопросах</h3>
+                        </summary>
                         <ul class="inline_list">
                             <li><a href="">Обратитесь в службу поддержки</a></li>
                             <li>Свяжитесь со специалистом в онлайн-чате</li>
                             <li>Задайте вопрос по телефону: <a href="">0(800)753-363</a>.</li>
                         </ul>
-
-                    </div>
-
-                    <div class="mobile__how-registration">
-                        <details>
-                            <summary>
-                                <h3>В какой ситуации поможет онлайн-кредит на карту?</h3>
-                            </summary>
-                            <p>Примеры ситуаций, когда выгодно обратиться в МФО, чтобы быстро получить деньги в
-                                кредит:
-                            </p>
-                            <ul>
-                                <li>задержали зарплату и не хватает средств на повседневные расходы (продукты
-                                    питания,
-                                    лекарства,
-                                    оплату
-                                    проезда и пр.);</li>
-                                <li>появились непредвиденные расходы во время отдыха, командировки и т. д.;</li>
-                                <li>нужно рассчитаться за покупку или услугу, но нет возможности оплатить наличными;
-                                </li>
-                                <li>рейтинг кредитной истории не позволяет взять кредит на желаемую сумму. Один из
-                                    способов
-                                    реабилитировать
-                                    КИ —
-                                    периодически брать кредиты в микрофинансовых организациях и вовремя погашать их.
-                                    Сроки и
-                                    суммы не
-                                    имеют
-                                    значения.
-                                    Ключевой фактор — своевременное закрытие кредита.</li>
-                            </ul>
-                            <p>Как правило, подобные ситуации требуют быстрых действий, поэтому онлайн-кредит —
-                                оптимальный
-                                выход.
-                            </p>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Где быстрее и легче взять кредит онлайн в Украине?</h3>
-                            </summary>
-                            <p>
-                                В Украине услуги онлайн-кредитования предоставляют микрофинансовые компании и банки.
-                                Последние
-                                готовы
-                                сотрудничать с
-                                заемщиком после тщательного анализа кредитной истории и документов. Как правило,
-                                помимо
-                                паспорта
-                                и
-                                ИНН,
-                                это справка о
-                                доходах и с места работы, документы, которые подтверждают наличие недвижимости или
-                                автомобиля.
-                                Кроме
-                                того, банк неохотно
-                                выдает кредиты заемщикам, которые трудоустроены неофициально.
-                            </p>
-                            <p>
-                                МФО менее требовательны к своим клиентам, и все проходит дистанционно. Нужно подать
-                                заявку,
-                                заполнить
-                                регистрационную
-                                анкету, указать данные паспорта (или ID-карты), ИНН (РНУКПН) и своей платежной
-                                карты.
-                                Также,
-                                следуя
-                                инструкциям,
-                                необходимо пройти верификацию. Положительная кредитная история и официальное
-                                трудоустройство
-                                не
-                                являются
-                                определяющими
-                                факторами при принятии решения по заявке.
-                            </p>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Преимущества кредита онлайн на карту</h3>
-                            </summary>
-                            <ul>
-                                <li>Оптимальная сумма — до 10-20 тыс. грн. Эта сумма достаточно комфортна для
-                                    погашения,
-                                    особенно,
-                                    если
-                                    деньги нужны до
-                                    зарплаты.</li>
-                                <li>Небольшой срок (до 30 дней) позволяет закрыть кредит сразу после того, как вы
-                                    получите
-                                    зарплату.
-                                </li>
-                                <li> Возможность распоряжаться деньгами на свое усмотрение. Вы получите необходимую
-                                    сумму на
-                                    личный
-                                    счет
-                                    и
-                                    сможете
-                                    использовать средства для любых целей. Это равноценно такой популярной
-                                    финансовой
-                                    услуге,
-                                    как
-                                    потребительский кредит
-                                    онлайн на карту.</li>
-                                <li> Понятные условия без скрытых комиссий. С помощью кредитного калькулятора можно
-                                    узнать
-                                    сумму
-                                    начисляемых
-                                    процентов и дату
-                                    погашения еще до подачи заявки.</li>
-                                <li> Выгодная программа лояльности. Некоторые микрофинансовые организации предлагают
-                                    оформить
-                                    первый
-                                    кредит
-                                    со сниженной
-                                    процентной ставкой — 0,01% в день. Переплата будет минимальной.</li>
-                                <li>Круглосуточный сервис. Подайте заявку утром, днем, ночью, в выходной или
-                                    праздничный
-                                    день.
-                                    Ваш
-                                    запрос
-                                    обработает
-                                    система, и после одобрения деньги перечислят на карту.</li>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Как взять онлайн-кредит в CreditPlus: пошаговая инструкция</h3>
-                            </summary>
-                            <ol>
-                                <li>Сформируйте заявку с помощью кредитного калькулятора, выберите необходимую сумму
-                                    и
-                                    дату
-                                    погашения
-                                    кредита, затем нажмите
-                                    кнопку «Получить деньги». Вы сразу узнаете сумму процентов. Если у вас есть
-                                    промокод,
-                                    воспользуйтесь
-                                    им
-                                    на этом этапе,
-                                    чтобы получить скидку на процентную ставку.</li>
-                                <li>Перед регистрацией ознакомьтесь с правилами и публичным предложением. Примите их
-                                    и
-                                    дайте
-                                    согласие на
-                                    обработку
-                                    персональных данных и доступ к кредитной истории.</li>
-                                <li>Укажите в регистрационной анкете необходимую информацию. Добавьте платежную
-                                    карту
-                                    любого
-                                    украинского
-                                    банка. Следуя
-                                    инструкции, пройдите верификацию с помощью системы Bank ID или сделайте фото с
-                                    паспортом
-                                    в
-                                    руках
-                                    в
-                                    режиме реального
-                                    времени. Обратите внимание: ошибки и неправдивая информация в анкете могут стать
-                                    причиной
-                                    отказа.</li>
-                                <li>Дождитесь решения по заявке. Вы получите его в SMS. Также информация будет
-                                    продублирована в
-                                    личном
-                                    кабинете.</li>
-                                <li>Ознакомьтесь с кредитным договором в личном кабинете. Согласитесь с условиями и
-                                    подтвердите
-                                    договор
-                                    с
-                                    помощью
-                                    одноразового электронного идентификатора, отправленного в SMS.</li>
-                                <li>CreditPlus отправит вам деньги на карту после того, как получит подтверждение
-                                    заключения
-                                    кредитного
-                                    договора. Также
-                                    компания отправит клиенту его экземпляр кредитного договора по электронной
-                                    почте,
-                                    которую он
-                                    указал
-                                    в
-                                    личном кабинете.</li>
-                            </ol>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Рекомендации для клиентов</h3>
-                            </summary>
-                            <p>
-                                Не откладывайте погашение на последний день. Ваш перевод может задержаться по
-                                техническим
-                                причинам.
-                                Обратите внимание:
-                                оплата кредита через кассу банка может проходить в течение трех суток согласно
-                                регламенту
-                                работы
-                                банковских организаций.
-                            </p>
-                            <p>
-                                Если вы не успеваете вовремя погасить кредит, воспользуйтесь услугой пролонгации или
-                                закройте
-                                часть
-                                кредита. В этом
-                                случае проценты насчитываются только на фактически оставшуюся сумму. Инструкции по
-                                услугам
-                                пролонгации и
-                                частичного
-                                погашения вы можете найти в разделе «Как продлить кредит».
-                            </p>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Юридическая информация</h3>
-                            </summary>
-                            <p>ТМ CreditPlus принадлежит ООО «АВЕНТУС УКРАИНА» (ЕГРПОУ: 41078230).</p>
-                            <ul class="inline_list">
-                                <li><a href="">Свидетельство о регистрации финансового учреждения ООО «АВЕНТУС
-                                        УКРАИНА»</a>
-                                </li>
-                                <li><a href="">Политика конфиденциальности от 19.01.2020</a></li>
-                            </ul>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Пример расчета при оформлении кредита со сниженной процентной ставкой 0,01% в
-                                    день
-                                </h3>
-                            </summary>
-                            <p>Размер кредита — 1000 грн, продолжительность — 10 дней, проценты — 0,01% в день.</p>
-                            <p>(0,0001 * 10 * 1000) + 1000 = 1001 грн. Итоговый размер платежа: 1001 грн.</p>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>Пример расчета онлайн-кредита со стандартной процентной ставкой 1,99% в день
-                                </h3>
-                            </summary>
-                            <p>Размер кредита — 1000 грн, продолжительность — 10 дней, проценты — 1,99% в день.</p>
-                            <p>(0,0199 * 10 * 1000) + 1000 = 1199 грн. Итоговый размер платежа: 1199 грн.</p>
-                        </details>
-                        <details>
-                            <summary>
-                                <h3>При дополнительных вопросах</h3>
-                            </summary>
-                            <ul class="inline_list">
-                                <li><a href="">Обратитесь в службу поддержки</a></li>
-                                <li>Свяжитесь со специалистом в онлайн-чате</li>
-                                <li>Задайте вопрос по телефону: <a href="">0(800)753-363</a>.</li>
-                            </ul>
-                        </details>
-                    </div>
+                    </details>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- услуги кредитования -->
-        <div class="services">
-            <div class="content">
-                <div class="tittle">
-                    <h2>
-                        Услуги кредитования
-                    </h2>
-                </div>
-                <div class="services__links">
-                    <a class="card services__card" href="">Взять быстрый займ онлайн</a>
-                    <a class="card services__card" href="">Кредиты с 18 лет на карту</a>
-                    <a class="card services__card" href="">Срочные кредиты без отказа онлайн</a>
-                    <a class="card services__card" href="">Кредит онлайн на карту без справок о доходах</a>
-                    <a class="card services__card" href="">Кредитный онлайн калькулятор</a>
-                    <a class="card services__card" href="">Круглосуточные кредиты на карту</a>
-                    <a class="card services__card" href="">Потребительский кредит на карту</a>
-                    <a class="card services__card" href="">Деньги до зарплаты</a>
-                    <a class="card services__card" href="">Срочно деньги в долг не выходя из дома</a>
-                    <a class="card services__card" href="">Участники рынка микрокредитирования Украины</a>
-                    <a class="card services__card" href="">Онлайн заявка на быстрый кредит наличными</a>
-                    <a class="card services__card" href="">Срочные кредиты на карту</a>
-                    <a class="card services__card" href="">Интернет-кредитование на карту онлайн</a>
-                    <a class="card services__card" href="">Экспресс-кредит онлайн на карту</a>
-                </div>
+    <!-- услуги кредитования -->
+    <div class="services">
+        <div class="content">
+            <div class="tittle">
+                <h2>
+                    Услуги кредитования
+                </h2>
+            </div>
+            <div class="services__links">
+                <a class="card services__card" href="">Взять быстрый займ онлайн</a>
+                <a class="card services__card" href="">Кредиты с 18 лет на карту</a>
+                <a class="card services__card" href="">Срочные кредиты без отказа онлайн</a>
+                <a class="card services__card" href="">Кредит онлайн на карту без справок о доходах</a>
+                <a class="card services__card" href="">Кредитный онлайн калькулятор</a>
+                <a class="card services__card" href="">Круглосуточные кредиты на карту</a>
+                <a class="card services__card" href="">Потребительский кредит на карту</a>
+                <a class="card services__card" href="">Деньги до зарплаты</a>
+                <a class="card services__card" href="">Срочно деньги в долг не выходя из дома</a>
+                <a class="card services__card" href="">Участники рынка микрокредитирования Украины</a>
+                <a class="card services__card" href="">Онлайн заявка на быстрый кредит наличными</a>
+                <a class="card services__card" href="">Срочные кредиты на карту</a>
+                <a class="card services__card" href="">Интернет-кредитование на карту онлайн</a>
+                <a class="card services__card" href="">Экспресс-кредит онлайн на карту</a>
             </div>
         </div>
-
-    </main>
+    </div>
 
     <!-- футер -->
-
     <footer w3-include-html="footer.html"></footer>
 
     <script src="./js/script.js"></script>
