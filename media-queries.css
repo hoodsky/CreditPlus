@@ -86,9 +86,37 @@
     display: flex;
     flex-direction: column;
   }
+  footer {
+    padding: 10px 0;
+  }
+  footer p {
+    padding: 0 20px;
+    font-size: 8px;
+  }
   .footer__row {
     display: flex;
     flex-direction: column;
+  }
+  .footer__table {
+    border-right: none;
+    border-bottom: #002b55 1px solid;
+    padding: 20px;
+  }
+  .footer__table:first-child {
+    padding: 20px;
+  }
+  .footer__table:last-child {
+    padding: 20px;
+  }
+  .footer__info {
+    /* justify-content: space-evenly; */
+    column-gap: 20px;
+  }
+  .footer__menu {
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    column-gap: 40px;
+    row-gap: 10px;
   }
   .registration__table {
     overflow-x: scroll;
@@ -211,5 +239,10 @@
   }
   .ant-carousel-element img {
     width: 150px;
+  }
+}
+@media (max-width: 350px) {
+  footer {
+    font-size: 10px;
   }
 }

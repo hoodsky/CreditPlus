@@ -1088,12 +1088,22 @@ footer p {
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 50px;
+  /* gap: 0px 50px; */
   grid-template-areas: '. . .';
 }
 .footer__table {
   display: flex;
   flex-direction: column;
+  border-right: #002b55 1px solid;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.footer__table:last-child {
+  padding-right: 0;
+  border: none;
+}
+.footer__table:first-child {
+  padding-left: 0;
 }
 .footer__info {
   display: flex;
@@ -1158,8 +1168,11 @@ footer p {
 }
 .footer__menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
+  column-gap: 20px;
+  row-gap: 10px;
 }
 .footer__menu a {
   font-family: Avenir Next Cyr;
