@@ -414,6 +414,7 @@ p {
 }
 .calculator_tittle {
   background-image: url(./img/calculator_back.png);
+  background-position: center;
   height: 285px;
   margin-top: 75px;
   font-family: Avenir Next Cyr;
@@ -423,8 +424,12 @@ p {
   line-height: 39px;
   /* identical to box height */
   color: #ffffff;
+  text-shadow: #002b55 1px 0 5px;
   padding-top: 75px;
   padding-left: 44px;
+}
+.calculator_tittle h1 {
+  text-shadow: #ffffff7c 1px 0 5px;
 }
 .calculator {
   display: grid;

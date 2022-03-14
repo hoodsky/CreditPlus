@@ -66,6 +66,10 @@
   .modal-promo {
     width: 80%;
   }
+  .calculator_tittle {
+    padding-top: 20px;
+    padding-left: 30px;
+  }
   .calculator {
     display: flex;
     flex-direction: column;
@@ -216,6 +220,10 @@
   }
   .header_lang {
     display: none;
+  }
+  .calculator_tittle {
+    padding: 10px;
+    height: auto;
   }
   .modal-promo {
     width: 100%;
