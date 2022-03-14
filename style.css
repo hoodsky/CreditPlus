@@ -712,7 +712,7 @@ p {
 .conditions {
   background: #e6edf577;
   padding: 50px 0;
-  margin: 70px 0;
+  margin: 40px 0;
 }
 .tab_box_content_ol {
   padding: 50px 40px;
@@ -838,64 +838,38 @@ p {
 }
 
 /* carousel */
-.carousel {
-  position: relative;
-  padding: 10px 40px;
+.flickity-viewport {
+  height: 340px;
 }
-
-.carousel_card {
-  background: #ffffff;
-  box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
-  border-radius: 10px;
-  padding: 30px 30px 40px 30px;
+.gallery-cell {
   width: 300px;
+  /* min-width: 300px; */
+  height: 300px;
+  margin: 10px;
+  /* background: #8c8; */
+  counter-increment: gallery-cell;
+  opacity: 0.5;
+}
+.gallery-cell:hover {
+  opacity: 1;
+}
+.gallery-cell.is-selected {
+  opacity: 1;
+  /* height: 300px; */
+}
+.carousel_card {
+  /* background: #ffffff; */
+  /* box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
+  border-radius: 10px; */
+  padding: 30px 30px 40px 30px;
+  /* width: 100%; */
   display: block;
-  margin: 0 20px;
-  height: 250px;
-}
-.arrow {
-  position: absolute;
-  /* top: 130px; */
-  padding: 0;
-  background: #ddd;
-  border: none;
-  font-size: 24px;
-  /* line-height: 24px; */
-  display: block;
-  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
-  cursor: pointer;
-  /* Положение элемента задаётся относительно границ браузера: */
-  position: absolute;
-  top: 35%;
-  height: auto;
-  padding: 16px 16px 16px 16px;
-  /* Оформление самих кнопок: */
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 16px;
-  background: #346da6;
-  /* Плавное появление фона при наведении курсора: */
-  transition: 0.6s ease;
-  /* Скругление границ: */
-  border-radius: 50%;
-}
-.arrow:focus {
-  outline: none;
-}
-.arrow:hover {
-  background: var(--main-color);
-  cursor: pointer;
-}
-.prev {
-  left: 7px;
-}
-.next {
-  right: 7px;
+  /* margin: 0 20px; */
+  /* height: 250px; */
 }
 .gallery {
   overflow: hidden;
-  /* width: 1300px; */
-  padding: 8px 0;
+  padding-bottom: 60px;
 }
 .gallery ul {
   height: 100%;

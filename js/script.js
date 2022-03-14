@@ -43,28 +43,6 @@ document.getElementById("defaultOpen").click();
 document.getElementById("defaultOpenCond").click();
 
 
-// карусель отзывы
-const width = 300;
-const count = 1;
-const reviewsCarousel = document.querySelector('#reviewsCarousel')
-const list = reviewsCarousel.querySelector('ul');
-const listElems = reviewsCarousel.querySelectorAll('li');
-
-let position = 0;
-
-reviewsCarousel.querySelector('.prev').onclick = function () {
-  position += width * count
-  position = Math.min(position, 0)
-  list.style.marginLeft = position + 'px';
-};
-reviewsCarousel.querySelector('.next').onclick = function() {
-      // сдвиг вправо
-      position -= width * count;
-      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position, -width * (listElems.length - count));
-      list.style.marginLeft = position + 'px';
-};
-    
 // калькулятор 
 
 const minSum = 600;
