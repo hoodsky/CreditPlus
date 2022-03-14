@@ -546,6 +546,7 @@ p {
   border: none;
   outline: none;
   width: 70px;
+  -moz-appearance: textfield;
 }
 .calculator_intup_all {
   display: flex;
