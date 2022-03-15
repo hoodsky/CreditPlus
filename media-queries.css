@@ -247,12 +247,6 @@
     height: 100px;
     width: 200px;
   }
-  .ant-carousel-element {
-    padding: 10px 20px;
-  }
-  .ant-carousel-element img {
-    width: 150px;
-  }
 }
 @media (max-width: 350px) {
   footer {
