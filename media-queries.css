@@ -161,6 +161,7 @@
   details[open] ol {
     animation: spoiler 1s;
   }
+
   @keyframes spoiler {
     0% {
       max-height: 0;
