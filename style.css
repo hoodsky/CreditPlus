@@ -36,6 +36,7 @@ h2 {
   line-height: 44px;
   color: var(--blue-color);
   margin: 0 0 50px 0;
+  text-align: center;
 }
 h3 {
   font-family: Avenir Next Cyr;
@@ -59,8 +60,6 @@ p {
   border-radius: 10px;
 }
 .tittle {
-  display: flex;
-  justify-content: center;
 }
 /* header */
 
@@ -871,19 +870,27 @@ p {
   overflow: hidden;
   padding-bottom: 60px;
 }
-.gallery ul {
-  height: 100%;
-  width: 9999px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: margin-left 250ms;
-}
-.gallery li {
-  display: inline-flex;
-}
-
 /* партнёры */
+
+.gallery-partners {
+  overflow: hidden;
+}
+.gallery-cell-partners {
+  width: 240px;
+  height: 120px;
+  margin: 10px;
+  /* background: #8c8; */
+  counter-increment: gallery-cell;
+  text-align: center;
+  /* padding: 10px; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-cell-partners img {
+  width: 190px;
+}
 .partners {
   background: #e6edf577;
   padding: 50px 0 70px 0;

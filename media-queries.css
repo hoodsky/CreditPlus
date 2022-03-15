@@ -38,7 +38,9 @@
   h2 {
     margin-bottom: 20px;
   }
-
+  p {
+    padding: 0 20px;
+  }
   .tittle {
     display: flex;
     justify-content: center;
@@ -170,9 +172,6 @@
   .header_login_button span {
     display: none;
   }
-  .header_logo {
-    margin-left: 30px;
-  }
   .slider::-webkit-slider-thumb {
     width: 35px;
     height: 35px;
@@ -189,6 +188,9 @@
     row-gap: 1px;
   }
   .gallery-cell.card {
+    box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
+  }
+  .gallery-cell-partners.card {
     box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
   }
   .card,
