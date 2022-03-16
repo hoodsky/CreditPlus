@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./flickity/flickity.css">
-    <link rel="stylesheet" href="./login.css">
+    <!-- <link rel="stylesheet" href="./login.css"> -->
     <link rel="stylesheet" href="./registration.css">
     <link rel="stylesheet" media="screen and (color)" href="./media-queries.css">
 </head>
@@ -53,33 +53,108 @@
     <main>
         <div class="reg-page">
             <div class="content">
+
                 <div class="card login-card">
-                    <div class="login-card_tittle">
-                        <a href="">Вход</a>
+                    <div class="step_progress">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <!-- <span class="step"></span> -->
+                    </div>
+                    <!-- <div class="login-card_tittle">
+                        <a href="./login.html">Вход</a>
                         <div class="login-card_vl"></div>
                         <a class="disabled" href="./registration.html">Регистрация</a>
                     </div>
-                    <form action="">
-                        <span class="login-card_form-tittle">Номер телефона</span>
+                    <form action="" method="">
+                        <label for="telephone" class="login-card_form-tittle">Номер телефона</label>
                         <div class="login-card_phone">
                             <input class="tel_country" type="tel" placeholder="+380" disabled>
                             <input class="tel_input" type="tel" autocomplete="on" pattern="[0-9]{9}" inputmode="tel"
-                                placeholder="123456789">
+                                name="user_tel" id="telephone" placeholder="123456789">
                         </div>
                         <button class="login-card_submit-button" type="submit">Далее</button>
+                    </form> -->
+                    <div class="login-card_tittle">
+                        <a href="./login.html">Вход</a>
+                        <div class="login-card_vl"></div>
+                        <a class="disabled" href="./registration.html">Регистрация</a>
+                    </div>
+                    <form id="regForm" action="">
+                        <div class="tab">
+                            <div class="reg-card_form-tittle">Номер телефона:</div>
+                            <p>
+                                <!-- <input class="tel_country" type="tel" placeholder="+380" disabled value="+380"> -->
+                                <input class="" type="tel" autocomplete="on" pattern="380[0-9]{9}" inputmode="tel"
+                                    name="user_tel" id="telephone" placeholder="380123456789"
+                                    oninput="this.className = ''">
+                            </p>
+                        </div>
+                        <div class="tab">
+                            <div class="reg-card_form-tittle">Код из смс:</div>
+                            <p><input placeholder="12-34" pattern="[0-9]{4}" oninput="this.className = ''"></p>
+                        </div>
+                        <div class="tab">
+                            <div class="reg-card_form-tittle">Личные данные:</div>
+                            <p>Фамилия<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Имя<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Отчество<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Дата рождения<br><input placeholder="" oninput="this.className = ''"></p>
+                        </div>
+                        <div class="tab">
+                            <div class="reg-card_form-tittle">Адрес регистрации:</div>
+                            <p>Область<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Район<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Город/Населёный пункт<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Индекс<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Улица<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Дом<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Квартира<br><input placeholder="" oninput="this.className = ''"></p>
+                        </div>
+                        <div class="tab">
+                            <div class="reg-card_form-tittle">Деятельность:</div>
+                            <p>Вид деятельности<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Доход в месяц<br><input placeholder="" oninput="this.className = ''"></p>
+                        </div>
+                        <div class="tab">
+                            <div class="reg-card_form-tittle">Дополнительная информация:</div>
+                            <p>Образование<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Семейное положение<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Количествор детей до 18 лет<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p class="login-card_form-tittle" style="margin-bottom: 0;">Дополнительные контактные
+                                данные:</p>
+                            <p style="font-size:x-small; margin-top: 0;">В случае отсутствия связи с основным
+                                номером<br></p>
+                            <p>Номер телефона<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Кому пренадлежит<br><input placeholder="" oninput="this.className = ''"></p>
+                        </div>
+                        <!-- <div class="tab">
+                            <div class="reg-card_form-tittle">Регистрация завершена!</div>
+                        </div> -->
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                                <!-- <button class="login-card_submit-button" type="button" id="prevBtn"
+                                    onclick="nextPrev(-1)">Назад</button> -->
+                                <button class="login-card_submit-button" type="button" id="nextBtn"
+                                    onclick="nextPrev(1)">Далее</button>
+                            </div>
+                        </div>
+
                     </form>
+
                 </div>
             </div>
         </div>
         </form>
-        </div>
-        </div>
-        </div>
     </main>
     <div w3-include-html="footer.html"></div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/carousel.js"></script>
+    <script src="./js/registration.js"></script>
+
     <script>
         includeHTML();
     </script>

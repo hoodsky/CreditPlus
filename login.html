@@ -52,16 +52,16 @@
             <div class="content">
                 <div class="card login-card">
                     <div class="login-card_tittle">
-                        <a class="disabled" href="">Вход</a>
+                        <a class="disabled" href="./login.html">Вход</a>
                         <div class="login-card_vl"></div>
                         <a href="./registration.html">Регистрация</a>
                     </div>
-                    <form action="">
-                        <span class="login-card_form-tittle">Номер телефона</span>
+                    <form action="" method="">
+                        <label for="telephone" class="login-card_form-tittle">Номер телефона:</label>
                         <div class="login-card_phone">
-                            <input class="tel_country" type="tel" placeholder="+380" disabled>
-                            <input class="tel_input" type="tel" autocomplete="on" pattern="[0-9]{9}" inputmode="tel"
-                                placeholder="123456789">
+                            <!-- <input class="tel_country" type="tel" placeholder="+380" disabled> -->
+                            <input type="tel" autocomplete="on" pattern="380[0-9]{9}" inputmode="tel" name="user_tel"
+                                id="telephone" placeholder="380123456789">
                         </div>
                         <button class="login-card_submit-button" type="submit">Далее</button>
                     </form>
@@ -73,7 +73,6 @@
     <div w3-include-html="footer.html"></div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/carousel.js"></script>
     <script>
         includeHTML();
     </script>

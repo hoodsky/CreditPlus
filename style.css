@@ -54,9 +54,10 @@ p {
   line-height: 150%;
   color: var(--blue-color);
 }
-a.disabled {
+.login-card_tittle a.disabled {
   pointer-events: none; /* делаем элемент неактивным для взаимодействия */
   cursor: default; /*  курсор в виде стрелки */
+  color: var(--main-color);
 }
 .card {
   background: #ffffff;
