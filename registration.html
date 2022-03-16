@@ -86,49 +86,52 @@
                     <form id="regForm" action="">
                         <div class="tab">
                             <div class="reg-card_form-tittle">Номер телефона:</div>
-                            <p>
-                                <!-- <input class="tel_country" type="tel" placeholder="+380" disabled value="+380"> -->
-                                <input class="" type="tel" autocomplete="on" pattern="380[0-9]{9}" inputmode="tel"
-                                    name="user_tel" id="telephone" placeholder="380123456789"
-                                    oninput="this.className = ''">
+                            <p class="tel-number">
+                                <input class="tel_country" type="tel" placeholder="+380" readonly value="+380">
+                                <input class="" type="number" autocomplete="on" pattern="[0-9]{9}" inputmode="tel"
+                                    name="user_tel" placeholder="123456789" oninput="this.className = ''">
                             </p>
                         </div>
                         <div class="tab">
                             <div class="reg-card_form-tittle">Код из смс:</div>
-                            <p><input placeholder="12-34" pattern="[0-9]{4}" oninput="this.className = ''"></p>
+                            <p><input type="number" placeholder="12-34" pattern="[0-9]{4}"
+                                    oninput="this.className = ''"></p>
                         </div>
                         <div class="tab">
                             <div class="reg-card_form-tittle">Личные данные:</div>
-                            <p>Фамилия<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Фамилия<br><input type="text" placeholder="" oninput="this.className = ''"></p>
                             <p>Имя<br><input placeholder="" oninput="this.className = ''"></p>
                             <p>Отчество<br><input placeholder="" oninput="this.className = ''"></p>
-                            <p>Дата рождения<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Дата рождения<br><input type="date" placeholder="" oninput="this.className = ''"></p>
                         </div>
                         <div class="tab">
                             <div class="reg-card_form-tittle">Адрес регистрации:</div>
-                            <p>Область<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Область<br>
+                                <input placeholder="" oninput="this.className = ''">
+                            </p>
                             <p>Район<br><input placeholder="" oninput="this.className = ''"></p>
                             <p>Город/Населёный пункт<br><input placeholder="" oninput="this.className = ''"></p>
                             <p>Индекс<br><input placeholder="" oninput="this.className = ''"></p>
                             <p>Улица<br><input placeholder="" oninput="this.className = ''"></p>
-                            <p>Дом<br><input placeholder="" oninput="this.className = ''"></p>
-                            <p>Квартира<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Дом<br><input type="number" placeholder="" oninput="this.className = ''"></p>
+                            <p>Квартира<br><input type="number" placeholder="" oninput="this.className = ''"></p>
                         </div>
                         <div class="tab">
                             <div class="reg-card_form-tittle">Деятельность:</div>
                             <p>Вид деятельности<br><input placeholder="" oninput="this.className = ''"></p>
-                            <p>Доход в месяц<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Доход в месяц<br><input type="number" placeholder="" oninput="this.className = ''"></p>
                         </div>
                         <div class="tab">
                             <div class="reg-card_form-tittle">Дополнительная информация:</div>
                             <p>Образование<br><input placeholder="" oninput="this.className = ''"></p>
                             <p>Семейное положение<br><input placeholder="" oninput="this.className = ''"></p>
-                            <p>Количествор детей до 18 лет<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Количествор детей до 18 лет<br><input type="number" placeholder=""
+                                    oninput="this.className = ''"></p>
                             <p class="login-card_form-tittle" style="margin-bottom: 0;">Дополнительные контактные
                                 данные:</p>
                             <p style="font-size:x-small; margin-top: 0;">В случае отсутствия связи с основным
                                 номером<br></p>
-                            <p>Номер телефона<br><input placeholder="" oninput="this.className = ''"></p>
+                            <p>Номер телефона<br><input type="number" placeholder="" oninput="this.className = ''"></p>
                             <p>Кому пренадлежит<br><input placeholder="" oninput="this.className = ''"></p>
                         </div>
                         <!-- <div class="tab">

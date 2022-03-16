@@ -58,10 +58,10 @@
                     </div>
                     <form action="" method="">
                         <label for="telephone" class="login-card_form-tittle">Номер телефона:</label>
-                        <div class="login-card_phone">
-                            <!-- <input class="tel_country" type="tel" placeholder="+380" disabled> -->
-                            <input type="tel" autocomplete="on" pattern="380[0-9]{9}" inputmode="tel" name="user_tel"
-                                id="telephone" placeholder="380123456789">
+                        <div class="login-card_phone tel-number">
+                            <input class="tel_country" type="tel" placeholder="+380" readonly value="+380">
+                            <input type="tel" autocomplete="on" pattern="[0-9]{9}" inputmode="tel" name="user_tel"
+                                id="telephone" placeholder="123456789">
                         </div>
                         <button class="login-card_submit-button" type="submit">Далее</button>
                     </form>

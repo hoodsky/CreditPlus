@@ -218,6 +218,25 @@
   .login-card_phone {
     width: 280px;
   }
+  .step_progress {
+    position: fixed;
+    top: 72px;
+    z-index: 3;
+  }
+  .step {
+    height: 3px;
+  }
+  .step:first-child {
+    border-radius: 0;
+  }
+  .step:last-child {
+    border-radius: 0;
+  }
+  .how-to-use,
+  .how-to-get {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 @media (max-width: 500px) {

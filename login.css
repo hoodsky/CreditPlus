@@ -1,6 +1,10 @@
 .login-page {
   padding-top: 115px;
 }
+.tel-number {
+  display: flex;
+  width: 280px;
+}
 .login-card {
   width: 620px;
   /* height: 310px; */
@@ -58,8 +62,8 @@
   box-sizing: border-box;
   border-radius: 4px 0px 0px 4px;
   height: 36px;
-  /* width: 44px; */
-  width: 15%;
+  width: 44px;
+  /* width: 15%; */
   margin-right: -4px;
   font-family: 'Avenir Next Cyr';
   font-style: normal;
