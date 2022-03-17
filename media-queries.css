@@ -244,7 +244,13 @@
     padding-right: 12px;
   }
   .tabs {
-    margin: 0 -12px 0 -12px;
+    /* margin: 0 -12px 0 -12px; */
+  }
+  .tabs > input[type='radio']:checked + label {
+    width: 30vw;
+  }
+  .tabs > label {
+    width: 30vw;
   }
 }
 
@@ -280,5 +286,8 @@
 @media (max-width: 350px) {
   footer {
     font-size: 10px;
+  }
+  .tabs > label {
+    width: 30vw;
   }
 }
