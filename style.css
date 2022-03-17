@@ -1256,6 +1256,7 @@ details > summary {
   background-color: white;
   border-radius: 8px 8px 0 0;
   flex-grow: 1;
+  width: 30vw;
 }
 
 .tabs div > div {
@@ -1289,4 +1290,5 @@ details > summary {
   line-height: 22px;
   text-align: center;
   color: var(--blue-color);
+  width: 30vw;
 }
