@@ -39,7 +39,7 @@
     margin-bottom: 20px;
   }
   p {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .tittle {
     display: flex;
@@ -188,6 +188,9 @@
     flex-direction: column;
     row-gap: 1px;
   }
+  .tabs.card {
+    box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
+  }
   .gallery-cell.card {
     box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
   }
@@ -232,10 +235,16 @@
   .step:last-child {
     border-radius: 0;
   }
+  .how-to-use_tb {
+    padding: 10px;
+  }
   .how-to-use,
   .how-to-get {
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .tabs {
+    margin: 0 -12px 0 -12px;
   }
 }
 

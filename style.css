@@ -1171,7 +1171,9 @@ details summary::-webkit-details-marker {
 details > summary {
   list-style: none;
 }
-
+.how-to-get img {
+  max-width: 100%;
+}
 .mobile__how-registration {
   display: none;
 }
@@ -1197,11 +1199,13 @@ details > summary {
   color: var(--blue-color);
   padding-left: 12px;
 }
-.how_registration ul li::marke,
+.how_registration ul li::marker,
 .how-to-use ul li::marker,
+.how-to-use ol ul li::marker,
 .how-to-get ul li::marker {
   color: var(--main-color);
 }
+
 .how_registration ol,
 .how-to-use ol,
 .how-to-get ol {
@@ -1210,7 +1214,7 @@ details > summary {
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  color: #003366;
+  color: var(--blue-color);
   padding-left: 20px;
 }
 .how_registration ol li::marker,
@@ -1225,4 +1229,64 @@ details > summary {
 }
 .how-to-use_tb {
   padding: 20px;
+}
+
+/* как получить  */
+.tabs {
+  /* display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px; */
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e9f2;
+}
+.tabs_content {
+  /* width: 200%; */
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  flex-grow: 2;
+}
+.tabs > input[type='radio'] {
+  display: none;
+}
+
+.tabs > input[type='radio']:checked + label {
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  flex-grow: 1;
+}
+
+.tabs div > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 0 20px;
+  background-color: white;
+}
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked ~ div > #content-1,
+#tab-btn-2:checked ~ div > #content-2 {
+  display: block;
+}
+
+.tabs > label {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 10px 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  cursor: pointer;
+  flex-grow: 1;
+  font-family: Avenir Next Cyr;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--blue-color);
 }
