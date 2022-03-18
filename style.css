@@ -46,6 +46,15 @@ h3 {
   line-height: 150%;
   color: var(--blue-color);
 }
+h4 {
+  font-family: Avenir Next Cyr;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--blue-color);
+  margin-left: 30px;
+}
 p {
   font-family: Avenir Next Cyr;
   font-style: normal;
@@ -1177,6 +1186,7 @@ details > summary {
 .mobile__how-registration {
   display: none;
 }
+.faq,
 .how-to-use,
 .how-to-get {
   margin-top: 75px;
@@ -1188,6 +1198,7 @@ details > summary {
   text-decoration: underline;
   color: var(--blue-color);
 }
+.faq ul,
 .how_registration ul,
 .how-to-use ul,
 .how-to-get ul {
@@ -1197,15 +1208,16 @@ details > summary {
   font-size: 14px;
   line-height: 150%;
   color: var(--blue-color);
-  padding-left: 12px;
+  /* padding-left: 12px; */
 }
+.faq ul li::marker,
 .how_registration ul li::marker,
 .how-to-use ul li::marker,
 .how-to-use ol ul li::marker,
 .how-to-get ul li::marker {
   color: var(--main-color);
 }
-
+.faq ol,
 .how_registration ol,
 .how-to-use ol,
 .how-to-get ol {
@@ -1215,8 +1227,9 @@ details > summary {
   font-size: 14px;
   line-height: 150%;
   color: var(--blue-color);
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
+.faq ol li::marker,
 .how_registration ol li::marker,
 .how-to-use ol li::marker,
 .how-to-get ol li::marker {
@@ -1288,4 +1301,62 @@ details > summary {
   font-size: 14px;
   line-height: 22px;
   color: var(--blue-color);
+}
+
+/* FAQ  */
+.faq {
+  margin-bottom: 40px;
+}
+.faq h3 {
+  font-size: 18px;
+  line-height: 200%;
+  text-align: center;
+}
+.faq details {
+  background-color: white;
+}
+.faq details p {
+  padding: 0 20px;
+}
+
+.faq details[open] {
+  background-color: #f4f5f9;
+  padding-bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+}
+.faq details:hover {
+  background-color: #f4f5f9;
+}
+
+.faq details[open] > summary {
+  font-size: 20px;
+  border-bottom: none;
+}
+.faq summary {
+  position: relative;
+  padding: 20px 40px 20px 20px;
+  border-top: 1px solid #ccd5df;
+  border-bottom: 1px solid #ccd5df;
+  color: #036;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Avenir Next Cyr, sans-serif;
+  margin-bottom: -1px;
+}
+.faq summary::after {
+  content: '';
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent var(--main-color) transparent;
+  position: absolute;
+  right: 20px;
+  transform: rotate(-180deg);
+  /* transform-origin: 0.2rem 50%; */
+  transition: 0.5s transform ease;
+}
+details[open] > summary::after {
+  transform: rotate(0deg);
 }

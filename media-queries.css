@@ -238,6 +238,10 @@
   .how-to-use_tb {
     padding: 10px;
   }
+  .faq {
+    padding: 0;
+  }
+
   .how-to-use,
   .how-to-get {
     padding-left: 12px;
@@ -251,6 +255,12 @@
   }
   .tabs > label {
     width: 30vw;
+  }
+
+  .faq details {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
   }
 }
 
