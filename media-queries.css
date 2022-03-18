@@ -38,6 +38,9 @@
   h2 {
     margin-bottom: 20px;
   }
+  h3 {
+    padding: 0 10px;
+  }
   p {
     padding: 0 10px;
   }
@@ -132,44 +135,9 @@
     display: none;
   }
   .mobile__how-registration {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-  }
-  details {
-    margin: 0 5px;
-    padding: 5px 5px 5px 15px;
-    box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25);
-    border-radius: 5px;
-  }
-  details:first-child {
-    border-radius: 10px 10px 5px 5px;
-  }
-  details:last-child {
-    border-radius: 5px 5px 10px 10px;
-  }
-  .inline_list {
-    display: flex;
-    flex-direction: column;
-  }
-  details[open] p {
-    animation: spoiler 1s;
-  }
-  details[open] ul {
-    animation: spoiler 1s;
-  }
-  details[open] ol {
-    animation: spoiler 1s;
+    display: block;
   }
 
-  @keyframes spoiler {
-    0% {
-      max-height: 0;
-    }
-    100% {
-      max-height: 1000px;
-    }
-  }
   .header_login_button span {
     display: none;
   }
@@ -262,6 +230,11 @@
     box-shadow: none;
     border-radius: 0;
   }
+  .about-us .card div {
+    flex-direction: column;
+    padding-right: 0;
+    row-gap: 15px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -299,5 +272,12 @@
   }
   .tabs > label {
     width: 30vw;
+  }
+  .about-us .card {
+    padding: 0;
+  }
+
+  .about-us .card div:last-child {
+    padding: 0 10px;
   }
 }

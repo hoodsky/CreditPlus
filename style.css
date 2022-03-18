@@ -1186,18 +1186,24 @@ details > summary {
 .mobile__how-registration {
   display: none;
 }
+.about-us,
+.how-to-repay,
 .faq,
 .how-to-use,
 .how-to-get {
   margin-top: 75px;
   padding-top: 40px;
 }
+.about-us a,
+.how-to-repay a,
 .how_registration a,
 .how-to-use a,
 .how-to-get a {
   text-decoration: underline;
   color: var(--blue-color);
 }
+.about-us ul,
+.how-to-repay ul,
 .faq ul,
 .how_registration ul,
 .how-to-use ul,
@@ -1210,6 +1216,8 @@ details > summary {
   color: var(--blue-color);
   /* padding-left: 12px; */
 }
+.about-us ul li::marker,
+.how-to-repay ul li::marker,
 .faq ul li::marker,
 .how_registration ul li::marker,
 .how-to-use ul li::marker,
@@ -1217,6 +1225,8 @@ details > summary {
 .how-to-get ul li::marker {
   color: var(--main-color);
 }
+.about-us ol,
+.how-to-repay ol,
 .faq ol,
 .how_registration ol,
 .how-to-use ol,
@@ -1229,6 +1239,8 @@ details > summary {
   color: var(--blue-color);
   /* padding-left: 20px; */
 }
+.about-us ol li::marker,
+.how-to-repay ol li::marker,
 .faq ol li::marker,
 .how_registration ol li::marker,
 .how-to-use ol li::marker,
@@ -1312,28 +1324,28 @@ details > summary {
   line-height: 200%;
   text-align: center;
 }
-.faq details {
+details {
   background-color: white;
 }
-.faq details p {
+details p {
   padding: 0 20px;
 }
 
-.faq details[open] {
+details[open] {
   background-color: #f4f5f9;
   padding-bottom: 10px;
   font-size: 16px;
   transition: all 0.3s ease-out;
 }
-.faq details:hover {
+details:hover {
   background-color: #f4f5f9;
 }
 
-.faq details[open] > summary {
+details[open] > summary {
   font-size: 20px;
   border-bottom: none;
 }
-.faq summary {
+summary {
   position: relative;
   padding: 20px 40px 20px 20px;
   border-top: 1px solid #ccd5df;
@@ -1346,7 +1358,7 @@ details > summary {
   font-family: Avenir Next Cyr, sans-serif;
   margin-bottom: -1px;
 }
-.faq summary::after {
+summary::after {
   content: '';
   border-width: 0.4rem;
   border-style: solid;
@@ -1359,4 +1371,30 @@ details > summary {
 }
 details[open] > summary::after {
   transform: rotate(0deg);
+}
+/* О компании  */
+.about-us .card {
+  display: flex;
+  padding: 20px 30px;
+  margin: 30px 0;
+}
+.about-us .card div {
+  border-right: 1px solid #e0e9f2;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us .card div:last-child {
+  border-right: none;
+  padding-left: 30px;
+}
+.icon-document {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+.about-us .card div a {
+  color: var(--main-color);
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как получить</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" media="screen and (color)" href="./media-queries.css">
+</head>
+
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+</script>
+
+<body>
+    <!-- header -->
+    <div w3-include-html="header.html"></div>
+    <main>
+        <div class="content how-to-repay">
+            <div class="tittle">
+                <h2>Как погасить кредит</h2>
+            </div>
+            <h3>Погасить кредит в CreditPlus или оплатить начисленные проценты и пеню можно одним из способов.</h3>
+            <ul>
+                <li>
+                    Банковской картой в личном кабинете. Для оплаты онлайн кредита в CreditPlus можно использовать
+                    карту,
+                    зарегистрированную
+                    в вашем кабинете, а также любую другую. <a href="./login.html">Ссылка для входа в личный кабинет
+                        CreditPlus</a> находится в
+                    верхней
+                    части сайта. Мы
+                    рекомендуем использовать этот способ, так как он быстрый, простой и бесплатный.
+                </li>
+                <li>
+                    В терминале «ПриватБанка». Зайдите в раздел «Коммунальные платежи», в поле поиска введите код
+                    компании
+                    CreditPlus —
+                    41078230, а в назначении платежа укажите свой идентификационный код.
+                </li>
+                <li>
+                    В приложении «Приват24». Оплатите кредит не выходя из дома с помощью онлайн-банкинга «Приват24».
+                    Авторизуйтесь в
+                    «Приват24», перейдите в раздел «Мои платежи», в поле поиска введите код компании CreditPlus —
+                    41078230,
+                    а в
+                    назначении
+                    платежа укажите свой идентификационный код.
+                </li>
+                <li>Через терминалы EasyPay, IBox, City24, Sistema (SIS). Для этого необходимо:</li>
+                <ol>
+                    <li>
+                        выбрать CreditPlus в категории «Банковские услуги» (в EasyPay — категория «Банки и финансовые
+                        услуги»);
+                    </li>
+                    <li>ввести свой ИНН или номер мобильного телефона, который вы указали при регистрации;</li>
+                    <li>оплатить или продлить кредит.</li>
+                </ol>
+                <li>
+                    В кассе банка. Обратитесь в любой банк и оплатите счет через кассу. В этом случае необходимо
+                    предоставить
+                    реквизиты
+                    компании CreditPlus.
+                </li>
+                <p>
+                    ООО «АВЕНТУС УКРАИНА» <br>
+                    ЕГРПОУ 41078230 <br>
+                    Счет № UA443052990000026505015000946 <br>
+                    в АО КБ «ПРИВАТБАНК» (МФО 305299) <br>
+                    Назначение платежа: «Платеж по кредиту №ХХХХ, клиент ФИО, ИНН ХХХХХХХХХХ»
+                </p>
+            </ul>
+
+            <p>
+                <b>
+                    Обращаем внимание, банк может брать дополнительную комиссию, а платеж может поступить на наш счет
+                    только
+                    через несколько
+                    дней. Согласно условиям договора, датой платежа считается дата зачисления денежных средств на наш
+                    счет.
+                </b>
+            </p>
+        </div>
+
+    </main>
+    <!-- футер -->
+    <footer w3-include-html="footer.html"></footer>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
