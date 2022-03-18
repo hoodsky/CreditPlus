@@ -109,6 +109,7 @@ function culc8() {
   var div = document.getElementById('caclulator_day_start_slide');
   div.style.width = ((+rng.value - +minDay)/25*100+'%');
 }
+
 // Fetch all the details element.
 const details = document.querySelectorAll("details");
 
