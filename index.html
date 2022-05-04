@@ -34,35 +34,6 @@
     <!-- <link rel="stylesheet" href="./registration.css"> -->
     <link rel="stylesheet" media="screen and (color)" href="./media-queries.css">
 </head>
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /* Loop through a collection of all HTML elements: */
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /* Make an HTTP request using the attribute value as the file name: */
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                        if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                        /* Remove the attribute, and call this function once more: */
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /* Exit the function: */
-                return;
-            }
-        }
-    }
-</script>
 
 <body>
 
@@ -118,8 +89,8 @@
                                 </div>
                                 <div class="calculator_slider">
                                     <div class="caclulator_start_slide" id="caclulator_start_slide"> </div>
-                                    <input oninput="culcSum()+culc3()" id="range_sum" type="range" min="0" max="9400"
-                                        step="100" value="3600" class="slider">
+                                    <input oninput="culcSum()+culc3()+percCulc()" id="range_sum" type="range" min="0"
+                                        max="9400" step="100" value="3600" class="slider">
                                 </div>
                                 <div class="calculator_value">
                                     <span>600 грн</span>
@@ -137,7 +108,7 @@
                                 </div>
                                 <div class="calculator_slider">
                                     <div class="caclulator_day_start_slide" id="caclulator_day_start_slide"> </div>
-                                    <input oninput="culc4()+culc5()" type="range" min="0" max="25" value="10"
+                                    <input oninput="culc4()+culc5()+percCulc()" type="range" min="0" max="25" value="10"
                                         class="slider" id="range_day">
                                 </div>
                                 <div class="calculator_value">
@@ -160,16 +131,16 @@
                             <div>
                                 Проценты
                             </div>
-                            <span>
-                                4,20 грн
+                            <span id="span_perc">
+                                4,2 грн
                             </span>
                         </div>
                         <div class="calculator_text_stroke">
                             <div>
-                                Отдаёте до
+                                Отдаёте до <span id="last_day">25</span>
                             </div>
-                            <span>
-                                3 004,20 грн
+                            <span id="dolg">
+                                3 004,2 грн
                             </span>
                         </div>
                         <div class="money_button">
@@ -1181,6 +1152,35 @@
 
     <!-- футер -->
     <footer w3-include-html="footer.html"></footer>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
 
     <script src="./js/script.js"></script>
     <script src="./flickity/flickity.pkgd.js"></script>

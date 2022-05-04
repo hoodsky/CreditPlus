@@ -1,7 +1,7 @@
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tab_box_content, tab_links;
-    
+
   // Get all elements with class="tab_box_content" and hide them
   tab_box_content = document.getElementsByClassName("tab_box_content");
   for (i = 0; i < tab_box_content.length; i++) {
@@ -22,7 +22,7 @@ function openTab(evt, tabName) {
 function openTabCond(evt, tabNameCond) {
   // Declare all variables
   var i, tab_box_content_condition, tab_links_cond;
-    
+
   // Get all elements with class="tab_box_content_condition" and hide them
   tab_box_content_condition = document.getElementsByClassName("tab_box_content_condition");
   for (i = 0; i < tab_box_content_condition.length; i++) {
@@ -53,10 +53,19 @@ function culcSum() {
   var span = document.getElementById('span_sum'); // p - абзац
   var inputSum = document.getElementById('input_sum');
   // var minSum = 600;
-  span.innerHTML = (+rng.value + +minSum +' грн');
+  span.innerHTML = (+rng.value + +minSum + ' грн');
   inputSum.value = +rng.value + +minSum;
 }
 
+// подсчет процентов и суммы
+function percCulc() {
+  var rng = document.getElementById('range_sum');
+  var perc = document.getElementById('span_perc');
+  var days = document.getElementById('range_day');
+  var dolgSum = document.getElementById('dolg');
+  perc.innerHTML = ((Math.round((0.0001 * +days.value * (+rng.value + +minSum)) * 10) / 10 + ' грн'));
+  dolgSum.innerHTML = (+rng.value + +minSum) + (Math.round((0.0001 * +days.value * (+rng.value + +minSum)) * 10) / 10) + ' грн'
+}
 
 // смена ползунка и правого блока по вводу цифр в поле "выберите сумму"
 function culc2() {
@@ -65,14 +74,14 @@ function culc2() {
   var span = document.getElementById('span_sum');
   span.innerHTML = rng.value + ' грн';
   range.value = +rng.value - +minSum;
- }
+}
 
 // движение оранжевой полоски при движении ползунка "выберите сумму"
 function culc3() {
   var rng = document.getElementById('range_sum');
   var div = document.getElementById('caclulator_start_slide');
   div.style.width = (rng.value / 9400 * 100 + '%');
-  
+
 }
 
 // движение оранжевой полоски при вводе суммы в поле "выберите сумму"
@@ -86,14 +95,14 @@ function culc6() {
 function culc4() {
   var rng = document.getElementById('range_day');
   var div = document.getElementById('caclulator_day_start_slide');
-  div.style.width=(rng.value/25*100+'%')
+  div.style.width = (rng.value / 25 * 100 + '%')
 }
 
 // смена поля ввода по движению ползунка "выберите срок"
 function culc5() {
   var rng = document.getElementById('range_day');
   var inputDay = document.getElementById('input_day');
-   inputDay.value = +rng.value + +minDay;
+  inputDay.value = +rng.value + +minDay;
 }
 
 // смена ползунка по вводу цифр в поле "выберите срок"
@@ -102,12 +111,12 @@ function culc7() {
   var range = document.getElementById('range_day');
   range.value = +rng.value - +minDay;
 }
- 
+
 // движение оранжевой полоски при вводе суммы в поле "выберите срок"
 function culc8() {
   var rng = document.getElementById('input_day');
   var div = document.getElementById('caclulator_day_start_slide');
-  div.style.width = ((+rng.value - +minDay)/25*100+'%');
+  div.style.width = ((+rng.value - +minDay) / 25 * 100 + '%');
 }
 
 // Fetch all the details element.
